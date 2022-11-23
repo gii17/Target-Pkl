@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 
 		<meta charset="UTF-8">
@@ -28,10 +28,6 @@
 		<!--- Animations css --->
 		<link href="../assets/css/animate.css" rel="stylesheet">
 
-		<!-- Switcher css -->
-		<link href="../assets/switcher/css/switcher.css" rel="stylesheet"/>
-		<link rel="stylesheet" href="../assets/switcher/demo.css"/>
-
 	</head>
 
 	<body class="main-body app sidebar-mini ltr">
@@ -44,7 +40,6 @@
 
 		<!-- page -->
 	   <div class="page custom-index">
-
 		<!-- main-header -->
 		<div class="main-header side-header sticky nav nav-item">
 			<div class="container-fluid main-container ">
@@ -431,7 +426,7 @@
 							<a class="side-menu__item" href="gallery.html"><i class="side-menu__icon fa fa-camera-retro"></i><span class="side-menu__label">Gallery</span></a>
 						</li>
 						<li class="slide">
-							<a class="side-menu__item" href="panduan_member.html"><i class="side-menu__icon fas fa-american-sign-language-interpreting"></i><span class="side-menu__label">Panduan Online	</span></a>
+							<a class="side-menu__item" href="panduan.html"><i class="side-menu__icon fas fa-american-sign-language-interpreting"></i><span class="side-menu__label">Panduan Online	</span></a>
 						</li>
 					</ul>
 
@@ -439,21 +434,21 @@
 				</div>
 			</aside>
 		</div>
-		<!-- main-sidebar -->
 
 		<!-- main-content -->
 		<div class="main-content app-content">
 
 			<!-- container -->
 			<div class="main-container container-fluid">
+
 				<!-- breadcrumb -->
 				<div class="breadcrumb-header justify-content-between">
 					<div>
 						<h4 class="content-title mb-2">Hi, welcome back!</h4>
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a   href="javascript:void(0);">Pages</a></li>
-								<li class="breadcrumb-item active" aria-current="page"> Empty</li>
+								<li class="breadcrumb-item"><a   href="javascript:void(0);">Advanced ui</a></li>
+								<li class="breadcrumb-item active" aria-current="page"> Blog</li>
 							</ol>
 						</nav>
 					</div>
@@ -489,377 +484,81 @@
 					</div>
 				</div>
 				<!-- /breadcrumb -->
-				<!-- breadcrumb -->
-				<div class="row row-sm">
 
-					<!-- col -->
-					<div class="col-lg-12 mt-3">
-						<div class="card mg-b-20">
-							<div class="card-body d-flex p-3">
-								<div class="main-content-label mb-0 mg-t-8">Daftar Startup</div>
-								<div class="ms-auto">
-									<a class="" href="daftar_startup.html">
-										<button class="btn btn-primary" style="border-radius: 20px;"> <i class="fa fa-user-plus me-1"></i> Create data</button>
-										<button class="btn btn-warning" style="border-radius: 20px;"> <i class="fa fa-wrench me-1"></i> Edit Data</button>
-										<button class="btn btn-danger" style="border-radius: 20px;"> <i class="fa fa-trash me-1"></i> Delete data</button>
-									</a>
+					<!-- row -->
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-md-12">
+							<div class="card blog-edit">
+								<div class="card-body">
+									<div class="form-group">
+										<label class="form-label text-dark">Course Title</label>
+										<input type="text" class="form-control" value="SiCepat Suntik Modal Perusahaan Podcast Milik Deddy Corbuzier">
+									</div>
+									<div class="form-group">
+										<label class="form-label text-dark">Category</label>
+										<select class="form-control select2 form-select">
+											<option>Select</option>
+											<option value="1" selected>ICT TECHNOPARK</option>
+											<option value="2">StratUp</option>
+											<option value="3">Asosiasi</option>
+											<option value="4">Komunitas</option>
+											<option value="5">Kompetisi</option>
+											<option value="6">Awardness</option>
+											<option value="7">WorkShop</option>
+											<option value="8">Training</option>
+											<option value="9">Inovasi dan teknologi</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label class="form-label text-dark">Instructor</label>
+										<select class="form-control select2 form-select">
+											<option>Select</option>
+											<option value="1" selected>Pedro Cox</option>
+											<option value="2">Vera Guzman</option>
+											<option value="3">Glenda Long</option>
+											<option value="4">Joel Anderson</option>
+											<option value="5">Blanche Henderson</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label class="form-label text-dark">Published?</label>
+										<div class="d-md-flex ad-post-details">
+											<label class="custom-control form-radio mb-2 me-4">
+												<input type="radio" class="custom-control-input" name="radios2" value="option1" checked="">
+												<span class="custom-control-label"><a href="javascript:void(0)" class="">Publish </a></span>
+											</label>
+											<label class="custom-control form-radio mb-2">
+												<input type="radio" class="custom-control-input" name="radios2" value="option2" >
+												<span class="custom-control-label"><a href="javascript:void(0)" class="">not Publish</a></span>
+											</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="ql-wrapper">
+											<div id="quillEditor">
+												<p><strong>Quill</strong> is a free, open source <a href="https://github.com/quilljs/quill/">WYSIWYG editor</a> built for the modern web. With its <a href="https://quilljs.com/docs/modules/">modular architecture</a> and expressive API, it is completely customizable to fit any need.</p><br>
+												<p>The icons use here as a replacement to default svg icons are from <a href="https://icons8.com/line-awesome">Line Awesome Icons</a>.</p>
+											</div>
+										</div>
+									</div>
+									<div class="p-4 border mb-4 form-group">
+										<div>
+											<input id="demo" type="file" name="files" accept=" image/jpeg, image/png, text/html, application/zip, text/css, text/js" multiple />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="form-label">Upload Video URL</label>
+										<input type="text" class="form-control" placeholder="https://videos.com" value="https://www.youtube.com/embed/tMWkeBIohBs">
+									</div>
+								</div>
+								<div class="card-footer ">
+									<a href="javascript:void(0)" class="btn btn-secondary">Save to Draft</a>
+									<a href="javascript:void(0)" class="btn btn-primary float-end">Publish Now</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- /col -->
-
-					<div class="col-md-6 col-lg-3 col-xl-3">
-						<div class="card">
-							<div class="card-body" style="background-color: salmon ;border: white;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;color: white;">
-								<ul class="sales-session">
-									<li>
-										<h6>Software : <span class="counter number-font">38</span></h6>
-									</li>
-									<li>
-										<h6>Aplikasi Mobile : <span class="counter number-font">96</span> </h6>
-									</li>
-									<li>
-										<h6>Aplikasi Dekstop : <span class="counter number-font">126</span> </h6>
-									</li>
-									<li>
-										<h6>Aplikasi Website : <span class="counter number-font">206</span> </h6>
-									</li>
-									<li>
-										<h6>Bigdata : <span class="counter number-font">896</span> </h6>
-									</li>
-									<li>
-										<h6>Cloud Computing : <span class="counter number-font">166</span> </h6>
-									</li>
-									<li>
-										<h6>Article Intelligent : <span class="counter number-font">206</span> </h6>
-									</li>
-									<li>
-										<h6>Speech Recog : <span class="counter number-font">416</span> </h6>
-									</li>
-									<li>
-										<h6>Video Multimedia : <span class="counter number-font">26</span> </h6>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6 col-lg-3 col-xl-3">
-						<div class="card">
-							<div class="card-body" style="background-color: #1c8759 ;border: white;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;color: white;">
-								<ul class="sales-session">
-									<li>
-										<h6>Embeded System : <span class="counter number-font">38</span></h6>
-									</li>
-									<li>
-										<h6>Internet of Things : <span class="counter number-font">96</span> </h6>
-									</li>
-									<li>
-										<h6>Robotik : <span class="counter number-font">126</span> </h6>
-									</li>
-									<li>
-										<h6>Elektronika : <span class="counter number-font">206</span> </h6>
-									</li>
-									<li>
-										<h6>Micro Controller : <span class="counter number-font">896</span> </h6>
-									</li>
-									<li>
-										<h6>Chipset : <span class="counter number-font">166</span> </h6>
-									</li>
-									<li>
-										<h6>Network / Jaringan : <span class="counter number-font">206</span> </h6>
-									</li>
-									<li>
-										<h6>Telekomunikasi : <span class="counter number-font">416</span> </h6>
-									</li>
-									<li>
-										<h6>Hardware : <span class="counter number-font">26</span> </h6>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6 col-lg-3 col-xl-3">
-						<div class="card">
-							<div class="card-body" style="background-color: #1c8759 ;border: white;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;color: white;">
-								<ul class="sales-session">
-									<li>
-										<h6>Animasi 2D : <span class="counter number-font">38</span></h6>
-									</li>
-									<li>
-										<h6>Animasi 3D : <span class="counter number-font">96</span> </h6>
-									</li>
-									<li>
-										<h6>Game 2D/3D : <span class="counter number-font">126</span> </h6>
-									</li>
-									<li>
-										<h6>Motion Graphic : <span class="counter number-font">206</span> </h6>
-									</li>
-									<li>
-										<h6>Desain Grafis : <span class="counter number-font">896</span> </h6>
-									</li>
-									<li>
-										<h6>Desain Web : <span class="counter number-font">166</span> </h6>
-									</li>
-									<li>
-										<h6>Desain Produk : <span class="counter number-font">206</span> </h6>
-									</li>
-									<li>
-										<h6>Komik : <span class="counter number-font">416</span> </h6>
-									</li>
-									<li>
-										<h6>Film & Advertising : <span class="counter number-font">26</span> </h6>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6 col-lg-3 col-xl-3">
-						<div class="card">
-							<div class="card-body" style="background-color: salmon ;border: white;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;color: white;">
-								<ul class="sales-session">
-									<li>
-										<h6>Digital Marketing : <span class="counter number-font">38</span></h6>
-									</li>
-									<li>
-										<h6>Ecommerce : <span class="counter number-font">96</span> </h6>
-									</li>
-									<li>
-										<h6>Transportasi : <span class="counter number-font">126</span> </h6>
-									</li>
-									<li>
-										<h6>Edukasi : <span class="counter number-font">206</span> </h6>
-									</li>
-									<li>
-										<h6>Kesehatan : <span class="counter number-font">896</span> </h6>
-									</li>
-									<li>
-										<h6>Pertanian : <span class="counter number-font">166</span> </h6>
-									</li>
-									<li>
-										<h6>Fintech : <span class="counter number-font">206</span> </h6>
-									</li>
-									<li>
-										<h6>Blockchain : <span class="counter number-font">416</span> </h6>
-									</li>
-									<li>
-										<h6>Biomedis : <span class="counter number-font">26</span> </h6>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="table-responsive mt-3">
-									<table id="file-datatable" class="border-top-0  table table-bordered text-nowrap border-bottom">
-										<thead>
-											<tr>
-												<th class="border-bottom-0"><input type="checkbox"></th>
-												<th class="border-bottom-0">No</th>
-												<th class="border-bottom-0">Tanggal</th>
-												<th class="border-bottom-0">Nama Startup</th>
-												<th class="border-bottom-0">User Daftar</th>
-												<th class="border-bottom-0">Kategori bidang</th>
-												<th class="border-bottom-0">Status</th>
-												<th class="border-bottom-0">Detail</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>1</td>
-												<td>12-08-2021<br>
-													12:00 pm
-												</td>
-												<td>Mocca animation</td>
-												<td>Ivan Chen</td>
-												<td>Animation, Character, short movie,<br>
-													Design Graphic, Animasi 2D</td>
-												<td><span style="width: 60px;" class="badge bg-pill bg-success">Enable</span> | <span style="width: 60px;" class="badge bg-pill bg-danger" style="width:50px;">Disable</span></td>
-												<td><a href="post_startup.html"><i class="typcn typcn-eye-outline" style="font-size: 30px;" data-bs-toggle="tooltip" title="typcn typcn-eye-outline"></i></a></td>
-											</tr>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>2</td>
-												<td>12-08-2021<br>
-													12:00 pm
-												</td>
-												<td>Enamo animation</td>
-												<td>Roni</td>
-												<td>Animation, Character, short movie,<br>
-													Design Graphic, Animasi 2D</td>
-												<td><span style="width: 60px;" class="badge bg-pill bg-success">Enable</span> | <span style="width: 60px;" class="badge bg-pill bg-danger">Disable</span></td>
-												<td><a href="post_startup.html"><i class="typcn typcn-eye-outline" style="font-size: 30px;" data-bs-toggle="tooltip" title="typcn typcn-eye-outline"></i></a></td>
-											</tr>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>3</td>
-												<td>12-08-2021<br>
-													12:00 pm
-												</td>
-												<td>Infection studio</td>
-												<td>Indra Bekti</td>
-												<td>Ilustration, Video Ads, Character</td>
-												<td><span style="width: 60px;" class="badge bg-pill bg-success">Enable</span> | <span style="width: 60px;" class="badge bg-pill bg-danger">Disable</span></td>
-												<td><a href="post_startup.html"><i class="typcn typcn-eye-outline" style="font-size: 30px;" data-bs-toggle="tooltip" title="typcn typcn-eye-outline"></i></a></td>
-											</tr>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>4</td>
-												<td>12-08-2021<br>
-													12:00 pm
-												</td>
-												<td>Ampu studio</td>
-												<td>Ivan Chen</td>
-												<td>ART, DESIGN AND ESSENCE,<br>
-													VIDEO AND ANIMATION, AUDIO PRODUCTION</td>
-												<td><span style="width: 60px;" class="badge bg-pill bg-success">Enable</span> | <span style="width: 60px;" class="badge bg-pill bg-danger">Disable</span></td>
-												<td><a href="post_startup.html"><i class="typcn typcn-eye-outline" style="font-size: 30px;" data-bs-toggle="tooltip" title="typcn typcn-eye-outline"></i></a></td>
-											</tr>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>5</td>
-												<td>12-08-2021<br>
-													12:00 pm
-												</td>
-												<td>Gambir Studio</td>
-												<td>Tri Marini</td>
-												<td>Game Solution</td>
-												<td><span style="width: 60px;" class="badge bg-pill bg-success">Enable</span> | <span style="width: 60px;" class="badge bg-pill bg-danger">Disable</span></td>
-												<td><a href="post_startup.html"><i class="typcn typcn-eye-outline" style="font-size: 30px;" data-bs-toggle="tooltip" title="typcn typcn-eye-outline"></i></a></td>
-											</tr>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>6</td>
-												<td>12-08-2021<br>
-													12:00 pm
-												</td>
-												<td>Slab game</td>
-												<td>Ivan Chen</td>
-												<td>Game Solution</td>
-												<td><span style="width: 60px;" class="badge bg-pill bg-success">Enable</span> | <span style="width: 60px;" class="badge bg-pill bg-danger">Disable</span></td>
-												<td><a href="post_startup.html"><i class="typcn typcn-eye-outline" style="font-size: 30px;" data-bs-toggle="tooltip" title="typcn typcn-eye-outline"></i></a></td>
-											</tr>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>7</td>
-												<td>12-08-2021<br>
-													12:00 pm
-												</td>
-												<td>Halal Local</td>
-												<td>Ivan Chen</td>
-												<td>Restoran Halal, Tempat Ibadah, kiblat</td>
-												<td><span style="width: 60px;" class="badge bg-pill bg-success">Enable</span> | <span style="width: 60px;" class="badge bg-pill bg-danger">Disable</span></td>
-												<td><a href="post_startup.html"><i class="typcn typcn-eye-outline" style="font-size: 30px;" data-bs-toggle="tooltip" title="typcn typcn-eye-outline"></i></a></td>
-											</tr>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>8</td>
-												<td>12-08-2021<br>
-													12:00 pm
-												</td>
-												<td>Medi Call</td>
-												<td>Ivan Chen</td>
-												<td>Dokter, Bidan, Perawat</td>
-												<td><span style="width: 60px;" class="badge bg-pill bg-success">Enable</span> | <span style="width: 60px;" class="badge bg-pill bg-danger">Disable</span></td>
-												<td><a href="post_startup.html"><i class="typcn typcn-eye-outline" style="font-size: 30px;" data-bs-toggle="tooltip" title="typcn typcn-eye-outline"></i></a></td>
-											</tr>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>9</td>
-												<td>12-08-2021<br>
-													12:00 pm
-												</td>
-												<td>Muslim Life</td>
-												<td>Ivan Chen</td>
-												<td>Panduan Sholat, Do'a, Al-quran</td>
-												<td><span style="width: 60px;" class="badge bg-pill bg-success">Enable</span> | <span style="width: 60px;" class="badge bg-pill bg-danger">Disable</span></td>
-												<td><a href="post_startup.html"><i class="typcn typcn-eye-outline" style="font-size: 30px;" data-bs-toggle="tooltip" title="typcn typcn-eye-outline"></i></a></td>
-											</tr>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>10</td>
-												<td>12-08-2021<br>
-													12:00 pm
-												</td>
-												<td>PT. WaGomu KREATIF ASIA</td>
-												<td>Irfan Mohaeni</td>
-												<td>Website, Belajar Bahasa Jepang,<br>
-													Business Attendace</td>
-												<td><span style="width: 60px;" class="badge bg-pill bg-success">Enable</span> | <span style="width: 60px;" class="badge bg-pill bg-danger">Disable</span></td>
-												<td><a href="post_startup.html"><i class="typcn typcn-eye-outline" style="font-size: 30px;" data-bs-toggle="tooltip" title="typcn typcn-eye-outline"></i></a></td>
-											</tr>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>11</td>
-												<td>12-08-2021<br>
-													12:00 pm
-												</td>
-												<td>Bigetron Esports</td>
-												<td>Irfan Mohaeni</td>
-												<td>Talent, Brandambasador,<br>
-													Konten Creator, Tournment E Sport</td>
-												<td><span style="width: 60px;" class="badge bg-pill bg-success">Enable</span> | <span style="width: 60px;" class="badge bg-pill bg-danger">Disable</span></td>
-												<td><a href="post_startup.html"><i class="typcn typcn-eye-outline" style="font-size: 30px;" data-bs-toggle="tooltip" title="typcn typcn-eye-outline"></i></a></td>
-											</tr>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>12</td>
-												<td>12-08-2021<br>
-													12:00 pm
-												</td>
-												<td>Clay Game Studio</td>
-												<td>Irfan Mohaeni</td>
-												<td>Game Developer, 2D Game,<br>
-													2D Animasi</td>
-												<td><span style="width: 60px;" class="badge bg-pill bg-success">Enable</span> | <span style="width: 60px;" class="badge bg-pill bg-danger">Disable</span></td>
-												<td><a href="post_startup.html"><i class="typcn typcn-eye-outline" style="font-size: 30px;" data-bs-toggle="tooltip" title="typcn typcn-eye-outline"></i></a></td>
-											</tr>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>13</td>
-												<td>12-08-2021<br>
-													12:00 pm
-												</td>
-												<td>Octagon Studio</td>
-												<td>Irfan Mohaeni</td>
-												<td>augmented reality, virtual reality,<br>
-													mixed reality</td>
-												<td><span style="width: 60px;" class="badge bg-pill bg-success">Enable</span> | <span style="width: 60px;" class="badge bg-pill bg-danger">Disable</span></td>
-												<td><a href="post_startup.html"><i class="typcn typcn-eye-outline" style="font-size: 30px;" data-bs-toggle="tooltip" title="typcn typcn-eye-outline"></i></a></td>
-											</tr>
-											<tr>
-												<td><input type="checkbox"></td>
-												<td>14</td>
-												<td>12-08-2021<br>
-													12:00 pm
-												</td>
-												<td>AeroTerrascan</td>
-												<td>Irfan Mohaeni</td>
-												<td>UAV, Drone</td>
-												<td><span style="width: 60px;" class="badge bg-pill bg-success">Enable</span> | <span style="width: 60px;" class="badge bg-pill bg-danger">Disable</span></td>
-												<td><a href="post_startup.html"><i class="typcn typcn-eye-outline" style="font-size: 30px;" data-bs-toggle="tooltip" title="typcn typcn-eye-outline"></i></a></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /breadcrumb -->
-
-				<!-- row -->
-				<div class="row">
-
-				</div>
-				<!-- row closed -->
+					<!-- /row -->
 			</div>
 			<!-- Container closed -->
 		</div>
@@ -1026,6 +725,9 @@
 		<!--- JQuery min js --->
 		<script src="../assets/plugins/jquery/jquery.min.js"></script>
 
+		<!--- Datepicker js --->
+		<script src="../assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
+
 		<!--- Bootstrap Bundle js --->
 		<script src="../assets/plugins/bootstrap/popper.min.js"></script>
 		<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -1033,56 +735,52 @@
 		<!--- Ionicons js --->
 		<script src="../assets/plugins/ionicons/ionicons.js"></script>
 
+		<!--Internal quill js -->
+		<script src="../assets/plugins/quill/quill.min.js"></script>
+
 		<!--- Moment js --->
 		<script src="../assets/plugins/moment/moment.js"></script>
 
 		<!--- JQuery sparkline js --->
 		<script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
 
+		<!--- Select2 js --->
+		<script src="../assets/plugins/select2/js/select2.min.js"></script>
+
 		<!--- P-scroll js --->
 		<script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 		<script src="../assets/plugins/perfect-scrollbar/p-scroll.js"></script>
 
-		<script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
-		<script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
-		<script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
-		<script src="../assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
-		<script src="../assets/plugins/datatable/js/jszip.min.js"></script>
-		<script src="../assets/plugins/datatable/pdfmake/pdfmake.min.js"></script>
-		<script src="../assets/plugins/datatable/pdfmake/vfs_fonts.js"></script>
-		<script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
-		<script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
-		<script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
-		<script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
-		<script src="../assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
-	
-			<script src="../assets/js/table-data.js"></script>
-
-		<!--- Switcher js --->
-		<script src="../assets/switcher/js/switcher.js"></script>
-
 		<!--- Eva-icons js --->
 		<script src="../assets/js/eva-icons.min.js"></script>
 
-
+		<!-- Internal Select2.min js -->
+		<script src="../assets/plugins/select2/js/select2.min.js"></script>
+		<script src="../assets/js/select2.js"></script>
 
 		<!--- Sidebar js --->
 		<script src="../assets/plugins/side-menu/sidemenu.js"></script>
+		<!--Internal Fileuploads js-->
+		<script src="../assets/plugins/fileuploads/js/fileupload.js"></script>
+        <script src="../assets/plugins/fileuploads/js/file-upload.js"></script>
+
+		<!--Internal Fancy uploader js-->
+		<script src="../assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
+        <script src="../assets/plugins/fancyuploder/jquery.fileupload.js"></script>
+        <script src="../assets/plugins/fancyuploder/jquery.iframe-transport.js"></script>
+        <script src="../assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
+        <script src="../assets/plugins/fancyuploder/fancy-uploader.js"></script>
 
 		<!--- sticky js --->
 		<script src="../assets/js/sticky.js"></script>
 
+		<!-- Internal Form-editor js -->
+		<script src="../assets/js/form-editor-2.js"></script>>
+
+
 		<!--- Right-sidebar js --->
 		<script src="../assets/plugins/sidebar/sidebar.js"></script>
 		<script src="../assets/plugins/sidebar/sidebar-custom.js"></script>
-
-		<!--- Counters --->
-		<script src="../assets/plugins/counters/waypoints.min.js"></script>
-		<script src="../assets/plugins/counters/counterup.min.js"></script>
-		
-		<!--- Time Counter --->
-		<script src="../assets/plugins/counters/jquery.missofis-countdown.js"></script>
-		<script src="../assets/plugins/counters/counter.js"></script>
 
 		<!--- Index js --->
 		<script src="../assets/js/script.js"></script>
@@ -1095,8 +793,6 @@
 
 		<!--- Custom js --->
 		<script src="../assets/js/custom.js"></script>
-
-		
 
 	</body>
 </html>
