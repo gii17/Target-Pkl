@@ -28,6 +28,10 @@
 		<!--- Animations css --->
 		<link href="../assets/css/animate.css" rel="stylesheet">
 
+		<!-- Switcher css -->
+		<link href="../assets/switcher/css/switcher.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="../assets/switcher/demo.css"/>
+
 	</head>
 
 	<body class="main-body app sidebar-mini ltr">
@@ -185,7 +189,7 @@
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a   href="javascript:void(0);">Pages</a></li>
-								<li class="breadcrumb-item active" aria-current="page">Panduan Online</li>
+								<li class="breadcrumb-item active" aria-current="page"> Empty</li>
 							</ol>
 						</nav>
 					</div>
@@ -221,278 +225,82 @@
 					</div>
 				</div>
 				<!-- /breadcrumb -->
-                    <!-- row -->
-                    <div class="row">
-						<div class="col-lg-4 col-xl-3">
-							<div class="card custom-card">
-                                <div class="card-header">
-                                    <div class="card-title">PANDUAN VIRTUAL TECHNOPARK</div>
-                                </div>
-								<div class="main-content-left main-content-left-mail card-body pt-0 ">
-									<div class="main-settings-menu">
-										<nav class="nav main-nav-column">
-											<a class="nav-link thumb  mb-2" href="panduan_member.html"><i class="fe fe-home"></i> Member </a>
-											<a class="nav-link border-top-0 thumb mb-2" href="panduan_event.html"><i class="fe fe-grid"></i> Event</a>
-											<a class="nav-link border-top-0 thumb mb-2 active" href="panduan_berita.html"><i class="fe fe-server"></i> Berita </a>
-											<a class="nav-link border-top-0 thumb mb-2" href="panduan_apps.html"><i class="fe fe-globe"></i> Apps</a>
-										</nav>
-									</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-xl-9">
-                            <div class="card custom-card">
-                                <div class="card-header">
-                                    <div class="card-title">Panduan CRUD (create, edit, delete) Berita</div>
-                                    <p>Langkah Langkah crud berita</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="card-body">
-									<div class="row">
-										<div class="col-xl-12 mx-auto">
-											<div class="checkout-steps wrapper">
-												<div id="checkoutsteps">
-													<!-- SECTION 1 -->
-													<h4>Sign-in</h4>
-													<section>
-														<form>
-															<h5 class="text-start mb-2">Login Account</h5>
-															<p class="mb-4 text-muted tx-13 ms-0 text-start">Langkah pertama jika kalian sudah mempunyai akun masukkan username serta password untuk login</p>
-															<div class="form-group text-start">
-																<label>Email</label>
-																<input class="form-control" placeholder="Enter your email" type="text">
-															</div>
-															<div class="form-group text-start">
-																<label>Password</label>
-																<input class="form-control" placeholder="Enter your password" type="password">
-															</div>
-															<button class="btn ripple btn-primary btn-block">Sign In</button>
-														</form>
-													</section> <!-- SECTION 2 -->
-													<h4>Registrasi</h4>
-													<section>
-														<form class="needs-validation" novalidate="">
-															<h5 class="text-start mb-2">Register Account</h5>
-															<p class="mb-4 text-muted tx-13 ms-0 text-start">Register account anda jika kalian belum mempunyai akun</p>
-															<div class="row">
-																<div class="col-md-6 mb-3">
-																	<label for="nama">Nama</label>
-																	<input type="text" class="form-control" id="nama" placeholder="" value="" required="">
-																	<div class="invalid-feedback">Valid first name is .</div>
-																</div>
-																<div class="col-md-6 mb-3">
-																	<label for="username">Username</label>
-																	<input type="text" class="form-control" id="username" placeholder="" value="" required="">
-																	<div class="invalid-feedback">Valid last name is required.</div>
-																</div>
-															</div>
-															<div class="mb-3">
-																<label for="password">Password</label>
-																<input type="password" class="form-control" id="password" placeholder="" required="">
-																<div class="invalid-feedback">Please enter your shipping address.</div>
-															</div>
-															<div class="mb-3">
-																<label for="confirmpassword">Confirm Password
-																</label>
-																<input type="text" class="form-control" id="confirmpassword" placeholder="">
-															</div>
-															<div class="row">
-																<div class="mb-3">
-																	<label class="form-label">Pilih Squad</label>
-																	<select name="negara" class="form-control select2-no-search" data-bs-placeholder="Select Country">
-																		<option value="id" selected>Technopark ICT</option>
-																		<option value="my">Startup Company</option>
-																		<option value="ph">Komunitas Software & Konten</option>
-																		<option value="sg">Asosiasi</option>
-																	</select>
-																	<div class="invalid-feedback">Please select a valid country.</div>
-																</div>	
-															</div>
-															<hr class="mb-4">
-															<button class="btn btn-primary btn-lg btn-block" type="submit">Register Account</button>
-														</form>
-													</section> <!-- SECTION 3 -->
-													<h4>Create</h4>
-													<section>
-														<h5 class="text-start mb-2">Menambah data berita</h5>
-														<p class="mb-4 text-muted tx-13 ms-0 text-start">Cara Menambah Data Berita :</p>
-														<p>1.Masuk ke halaman berita</p>
-														<div>
-															<img src="../assets/img/panduan/berita/berita1.png" alt="">
-														</div>
-														<br>
-														<br>
-														<br>
-														<p>2.lalu tekan teks tambah di halaman berita</p>
-														<div>
-															<img src="../assets/img/panduan/berita/berita2.png" alt="">
-														</div>
-														<br>
-														<br>
-														<br>
-														<p>3. lalu isi semua form tabel seperti tabel dibawah ini</p>
-														<div class="row">
-															<div class="col-md-6 mb-3">
-																<label for="judul">Title Berita</label>
-																<input type="text" class="form-control" id="nama" placeholder="" value="" required="">
-																<div class="invalid-feedback">Judul Event</div>
-															</div>
-															<div class="col-md-6 mb-3">
-																<label for="slug">Slug</label>
-																<input type="text" class="form-control" id="username" placeholder="" value="" required="">
-																<div class="invalid-feedback">Valid last name is required.</div>
-															</div>
-														</div>
-														<div class="mb-3">
-															<label for="fileu">File upload 1024 X 768 (Disesuaikan dengan gambar) -> format Webp
-															</label>
-															<input type="text" class="form-control" id="fileu" placeholder="Upload Image">
-														</div>
-														<div class="mb-3">
-															<label for="desk">Description
-															</label>
-															<textarea class="form-control" id="desk" placeholder=""></textarea>
-														</div>
-														<div class="row">
-															<div class="col-md-6 mb-3">
-																<label for="ig">Instagram</label><span class="text-muted">
-																	(optional)
-																</span>
-																<input type="text" class="form-control" id="ig" placeholder="" value="" required="">
-																<div class="invalid-feedback">Valid first name is .</div>
-															</div>
-															<div class="col-md-6 mb-3">
-																<label for="fb">Facebook</label><span class="text-muted">
-																	(optional)
-																</span>
-																<input type="text" class="form-control" id="fb" placeholder="" value="" required="">
-																<div class="invalid-feedback">Valid last name is required.</div>
-															</div>
-														</div>
-														<div class="row">
-															<div class="col-md-6 mb-3">
-																<label for="link">Link in</label><span class="text-muted">
-																	(optional)
-																</span>
-																<input type="text" class="form-control" id="link" placeholder="" value="" required="">
-																<div class="invalid-feedback">Valid first name is .</div>
-															</div>
-															<div class="col-md-6 mb-3">
-																<label for="twt">Tweet</label><span class="text-muted">
-																	(optional)
-																</span>
-																<input type="text" class="form-control" id="twt" placeholder="" value="" required="">
-																<div class="invalid-feedback">Valid last name is required.</div>
-															</div>
-														</div>
-														<hr class="mb-4">
-														<button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
-													</form>
-													<br>
-													<br>
-													<br>
-														<p>4. Setelah sudah mengisi semua lalu submit</p>
-														<p>5. Data berita berhasil ditambahkan</p>
-													</section><!-- SECTION 4 -->
-													<h4>Edit</h4>
-													<section>
-														<div class="">
-															<h5 class="text-start mb-2">Mengubah data berita</h5>
-															<p class="mb-4 text-muted tx-13 ms-0 text-start">Cara Mengubah data berita :</p>
-															<p>1. di halaman berita, kalian tekan teks edit di data tabel</p>
-															<p>2. lalu ubah teks form yang kalian ingin edit</p>
-															<div class="row">
-																<div class="col-md-6 mb-3">
-																	<label for="judul">Title Berita</label>
-																	<input type="text" class="form-control" id="nama" placeholder="" value="" required="">
-																	<div class="invalid-feedback">Judul Event</div>
-																</div>
-																<div class="col-md-6 mb-3">
-																	<label for="slug">Slug</label>
-																	<input type="text" class="form-control" id="username" placeholder="" value="" required="">
-																	<div class="invalid-feedback">Valid last name is required.</div>
-																</div>
-															</div>
-															<div class="mb-3">
-																<label for="fileu">File upload 1024 X 768 (Disesuaikan dengan gambar) -> format Webp
-																</label>
-																<input type="text" class="form-control" id="fileu" placeholder="Upload Image">
-															</div>
-															<div class="mb-3">
-																<label for="desk">Description
-																</label>
-																<textarea class="form-control" id="desk" placeholder=""></textarea>
-															</div>
-															<div class="row">
-																<div class="col-md-6 mb-3">
-																	<label for="ig">Instagram</label><span class="text-muted">
-																		(optional)
-																	</span>
-																	<input type="text" class="form-control" id="ig" placeholder="" value="" required="">
-																	<div class="invalid-feedback">Valid first name is .</div>
-																</div>
-																<div class="col-md-6 mb-3">
-																	<label for="fb">Facebook</label><span class="text-muted">
-																		(optional)
-																	</span>
-																	<input type="text" class="form-control" id="fb" placeholder="" value="" required="">
-																	<div class="invalid-feedback">Valid last name is required.</div>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-6 mb-3">
-																	<label for="link">Link in</label><span class="text-muted">
-																		(optional)
-																	</span>
-																	<input type="text" class="form-control" id="link" placeholder="" value="" required="">
-																	<div class="invalid-feedback">Valid first name is .</div>
-																</div>
-																<div class="col-md-6 mb-3">
-																	<label for="twt">Tweet</label><span class="text-muted">
-																		(optional)
-																	</span>
-																	<input type="text" class="form-control" id="twt" placeholder="" value="" required="">
-																	<div class="invalid-feedback">Valid last name is required.</div>
-																</div>
-															</div>
-															<hr class="mb-4">
-															<button class="btn btn-primary btn-lg btn-block" type="submit">update</button>
-														</form>
-														<br>
-														<br>
-														<br>
-															<p>3. setelah sudah klik submit</p>
-															<p>4. Data berita sudah berhasil diedit</p>
-														</div>
-													</section>
-													<h4>Delete</h4>
-													<section class="text-center">
-														<div class="text-start">
-															<h5 class="text-start mb-2">menghapus data berita</h5>
-															<p class="mb-4 text-muted tx-13 ms-0 text-start">Cara menghapus data berita :</p>
-															<p>1. di tabel berita tekan icon delete</p>
-															<p>2. lalu konfirmasi jika anda ingin menghapus data di berita</p>
-															<p>3. Data anda berhasil dihapus</p>
-														</div>
-														<div>
-															<h5 class="text-center mb-4">Data anda berhasil dihapus</h5>
-														</div>
-														<svg class="wd-100 ht-100 mx-auto justify-content-center mb-3 text-center" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-															<circle class="path circle" fill="none" stroke="#22c03c" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
-															<polyline class="path check" fill="none" stroke="#22c03c" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " />
-														</svg>
-														<p class="success pl-5 pr-5">Data di tabel berita berhasil anda hapus</p>
-													</section>
-												</div>
-											</div>
-									   </div>
-									</div>
+
+				<!-- row -->
+				<!-- breadcrumb -->
+				<div class="row row-sm">
+
+					<!-- col -->
+					<div class="col-lg-12 mt-3">
+						<div class="card mg-b-20">
+							<div class="card-body d-flex p-3">
+								<div class="main-content-label mb-0 mg-t-8">banner evet</div>
+								<div class="ms-auto">
+									<a class="" href="post_banner.html">
+										<button class="btn btn-primary" style="border-radius: 20px;"> <i class="fa fa-user-plus me-1"></i> Create data</button>
+									
+									</a>
 								</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/ row -->
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="card">
+							<div class="card-body">
+								<div class="table-responsive">
+										<table id="file-datatable" class="border-top-0  table table-bordered text-nowrap border-bottom">
+											<thead>
+												<tr>
+													<th class="border-bottom-0">Upload in</th>
+													<th class="border-bottom-0">Image Banner</th>
+													<th class="border-bottom-0">Tanggal Ubah</th>
+													<th class="border-bottom-0">Action</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Bandung Technopark</td>
+													<td><img src="../assets/img/banner/1.png" alt=""></td>
+													<td>07-31-2024</td>
+													<td>
+                                                        <div class="d-flex">
+                                                            <button class="badge bg-pill bg-warning border-0" style="width: 60px;">Edit</button>
+                                                            <button class="badge bg-pill bg-danger border-0"   style="margin-left: 5px;width: 60px;">Delete</button>
+                                                        </div>
+                                                     </td>
+												</tr>
+												<tr>
+													<td>Cimahi Technopark</td>
+													<td><img src="../assets/img/banner/2.png" alt=""></td>
+													<td>07-31-2024</td>
+													<td>
+                                                        <div class="d-flex">
+                                                            <button class="badge bg-pill bg-warning border-0" style="width: 60px;">Edit</button>
+                                                            <button class="badge bg-pill bg-danger border-0"   style="margin-left: 5px;width: 60px;">Delete</button>
+                                                        </div>
+                                                     </td>
+												</tr>
+												<tr>
+													<td>Bandung Technopark</td>
+													<td><img src="../assets/img/banner/3.png" alt=""></td>
+													<td>07-31-2024</td>
+													<td>
+                                                        <div class="d-flex">
+                                                            <button class="badge bg-pill bg-warning border-0" style="width: 60px;">Edit</button>
+                                                            <button class="badge bg-pill bg-danger border-0"   style="margin-left: 5px;width: 60px;">Delete</button>
+                                                        </div>
+                                                     </td>
+												</tr>
+											</tbody>
+										</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /breadcrumb -->
+				<!-- row closed -->
 			</div>
 			<!-- Container closed -->
 		</div>
@@ -666,11 +474,24 @@
 		<!--- Ionicons js --->
 		<script src="../assets/plugins/ionicons/ionicons.js"></script>
 
-		<!--- Select2.min js --->
-		<script src="../assets/plugins/select2/js/select2.min.js"></script>
-
 		<!--- Moment js --->
 		<script src="../assets/plugins/moment/moment.js"></script>
+
+        <!-- DATA TABLE JS-->
+        <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+        <script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+        <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+        <script src="../assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
+        <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
+        <script src="../assets/plugins/datatable/pdfmake/pdfmake.min.js"></script>
+        <script src="../assets/plugins/datatable/pdfmake/vfs_fonts.js"></script>
+        <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
+        <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
+        <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+        <script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
+        <script src="../assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
+
+		<script src="../assets/js/table-data.js"></script>
 
 		<!--- JQuery sparkline js --->
 		<script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
@@ -679,13 +500,13 @@
 		<script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 		<script src="../assets/plugins/perfect-scrollbar/p-scroll.js"></script>
 
+		<!--- Switcher js --->
+		<script src="../assets/switcher/js/switcher.js"></script>
+
 		<!--- Eva-icons js --->
 		<script src="../assets/js/eva-icons.min.js"></script>
 
-		<!-- Jquery-steps js -->
-		<script src="../assets/plugins/checkout-jquery-steps/jquery.steps.min.js"></script>
-		<script src="../assets/js/checkout-jquery-steps.js"></script>
-		<script src="../assets/js/handleCounter.js"></script>
+
 
 		<!--- Sidebar js --->
 		<script src="../assets/plugins/side-menu/sidemenu.js"></script>
