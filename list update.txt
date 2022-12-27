@@ -1,0 +1,6 @@
+========== UPDATE TERBARU ==========
+    - Membuat detail berita 
+    - mengubah tampilan modul event => belum selesai
+    - membuat form edit 
+    - membuat approvel modul event
+========== END UPDATE TERBARU ==========
