@@ -20,7 +20,7 @@ $(function(e) {
 
     //______File-Export Data Table
     var table = $('#file-datatable').DataTable({
-        buttons: ['copy', 'excel', 'pdf', 'colvis'],
+        buttons: ['copy', 'excel', 'pdf'],
         language: {
             searchPlaceholder: 'Search...',
             scrollX: "100%",
