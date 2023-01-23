@@ -9,14 +9,14 @@
 		<meta name="Author" content="Spruko Technologies Private Limited">
 		<meta name="Keywords" content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4"/>
 
-		<!-- Title -->
-		<title> Azira -  Premium dashboard ui bootstrap rwd admin html5 template </title>
-
 		<!--- Favicon --->
 		<link rel="icon" href="../assets/img/brand/favicon.png" type="image/x-icon"/>
 
 		<!-- Bootstrap css -->
 		<link href="../assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" id="style"/>
+
+		<!-- Title -->
+		<title>Azira -  Admin Panel HTML Dashboard Template</title>
 
 		<!--- Icons css --->
 		<link href="../assets/css/icons.css" rel="stylesheet">
@@ -27,10 +27,6 @@
 
 		<!--- Animations css --->
 		<link href="../assets/css/animate.css" rel="stylesheet">
-
-		<!-- Switcher css -->
-		<link href="../assets/switcher/css/switcher.css" rel="stylesheet"/>
-		<link rel="stylesheet" href="../assets/switcher/demo.css"/>
 
 	</head>
 
@@ -155,7 +151,7 @@
 									class="side-menu__label">Panduan Online </span></a>
 						</li>
 						<li class="slide">
-							<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i
+								<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i
 									class="side-menu__icon fa fa-cogs"></i><span class="side-menu__label">Settings Layout</span><i class="angle fe fe-chevron-down"></i></a>
 							<ul class="slide-menu">
 								<li class="side-menu__label1"><a href="javascript:void(0);">Apps</a></li>
@@ -189,7 +185,7 @@
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a   href="javascript:void(0);">Pages</a></li>
-								<li class="breadcrumb-item active" aria-current="page"> Empty</li>
+								<li class="breadcrumb-item active" aria-current="page"> Gallery</li>
 							</ol>
 						</nav>
 					</div>
@@ -225,104 +221,103 @@
 					</div>
 				</div>
 				<!-- /breadcrumb -->
-
-				<!-- row -->
-				<!-- breadcrumb -->
-				<div class="row">
-					<div class="col-lg-4 col-xl-3">
-						<div class="card">
-							<div class="main-content-left main-content-left-mail card-body">
-								<a class="btn btn-primary btn-compose" id="btnCompose"><i class="fa fa-align-left mx-2"></i> List Banner Settings</a>
-								<div class="main-mail-menu">
-									<nav class="nav main-nav-column">
-										<a class="nav-link thumb {{ Request::is('dashboard/banner/home') ? "active" : '' }}" href="banner_home.html"><i
-												class="fe fe-home"></i> Home </a>
-										<a class="nav-link thumb {{ Request::is('dashboard/banner/member') ? "active" : '' }}" href="banner_home.html"><i class="fe fe-users"></i> Member / Squad</a>
-										<a class="nav-link thumb {{ Request::is('dashboard/banner/blog') ? "active" : '' }}" href="banner_home.html"><i class="fe fe-book-open"></i> Blog  / Articel</a>
-										<a class="nav-link thumb {{ Request::is('dashboard/banner/event') ? "active" : '' }}" href="banner_home.html"><i class="fe fe-monitor"></i> Event & Program</a>
-										<a class="nav-link thumb {{ Request::is('dashboard/banner/apps') ? "active" : '' }}" href="banner_home.html"><i class="fe fe-smartphone"></i>Apps & Software</a>
-										<a class="nav-link thumb {{ Request::is('dashboard/banner/faq') ? "active" : '' }}" href="banner_home.html"><i class="fe fe-crosshair"></i>FAQ</a>
-										<a class="nav-link thumb {{ Request::is('dashboard/banner/kontak') ? "active" : '' }}" href="banner_home.html"><i class="fe fe-phone"></i>Kontak </a>
-										<a class="nav-link thumb {{ Request::is('dashboard/banner/gallery') ? "active" : '' }}" href="banner_home.html"><i class="fe fe-image"></i> Gallery</a>
-										<a class="nav-link thumb {{ Request::is('dashboard/banner/about') ? "active" : '' }}" href="banner_home.html"><i class="fe fe-user"></i> About Me</a>
-										<a class="nav-link thumb {{ Request::is('dashboard/banner/roadmap') ? "active" : '' }}" href="banner_home.html"><i class="fe fe-map"></i>Roadmap</a>
-										<a class="nav-link thumb {{ Request::is('dashboard/banner/roadmap') ? "active" : '' }}" href="banner_map.html"><i class="fe fe-code"></i>Map</a>
-									</nav>
-								</div><!-- main-mail-menu -->
-								<div class=" border rounded-5 mt-3">
-									<div class="card-header bg-transparent font-weight-bold"><i
-											class="fe fe-hard-drive me-2"></i>Storage</div>
-									<div class="card-body pt-0">
-										<div class="progress fileprogress mg-b-10">
-											<div class="progress-bar progress-bar-xs wd-15p" role="progressbar"
-												aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-										<div class="text-muted font-weight-semibold tx-13 mb-1">26.24 GB Used of 128GB
-										</div>
-										<div class="tx-13 text-primary font-weight-semibold">Upgrade Storage</div>
-									</div>
-								</div>
+				<div class="row row-sm">
+				<div class="col-lg-12 mt-3">
+					<div class="card mg-b-20">
+						<div class="card-body d-flex p-3">
+							<div class="main-content-label mb-0 mg-t-8">EVENT & PROGRAM</div>
+							<div class="ms-auto">
+								<a class="" href="post_gallery.html">
+									<button class="btn btn-primary" style="border-radius: 20px;"> <i class="fa fa-user-plus me-1"></i> Create data</button>
+								</a>
 							</div>
 						</div>
 					</div>
-					
-					<div class="main-content-body main-content-body-profile">
-							<div class="tab-pane active show" id="tab-61">
-								<div class="col-lg-8 col-xl-12">
-									<div class="row">
-										<div class="col-lg-12">
-											<div class="card mg-b-20">
-												<div class="card-body d-flex p-3">
-													<div class="main-content-label mb-0 mg-t-8">BANNER HOME</div>
-													<div class="ms-auto">
-														<a class="" href="/dashboard/banner/home/create">
-															<button class="btn btn-primary" style="border-radius: 20px;"> <i class=" text-light fa fa-user-plus me-1"></i> Create data</button>
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-body">
-											<div class="row mt-4">
-												<div class="table-responsive">
-													<table id="file-datatable" class="border-top-0  table table-bordered text-nowrap border-bottom">
-														<thead>
-															<tr>
-																<th class="border-bottom-0">No</th>
-																<th class="border-bottom-0">Upload In</th>
-																<th class="border-bottom-0">Poster Banner</th>
-																<th class="border-bottom-0">Video Banner</th>
-																<th class="border-bottom-0">Action</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<td>1</td>
-																<td>KEMENPRIN</td>
-																<td><img src="../assets/video/bannerhome.jpg" alt="" style="max-width: 150px;"></td>
-																<td><video class="video-bg" autoplay loop muted poster="{{ asset('assets/videos/bannerhome') }}"  style="max-width: 150px;">
-																	<source src="../assets/video/background.mp4" type="video/mp4">
-																</video></td>
-																<td>
-																	<div class="d-flex">
-																		<a class="badge bg-pill bg-warning border-0" href="/dashboard/banner/home/edit" style="width: 60px;">Edit</a>
-																		<button class="badge bg-pill bg-danger border-0"   style="margin-left: 5px;width: 60px;">Delete</button>
-																	</div>
-																</td>
-															</tr>
-														</tbody>
-													</table>
-											</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-					</div>
 				</div>
-				<!-- /breadcrumb -->
+				<div class="demo-gallery">
+					<ul id="lightgallery" class="list-unstyled row row-sm">
+						<li class="col-sm-6 col-lg-4" data-responsive="https://dev.virtualtechnopark.id/assets/images/img-gallery/1.jpg" data-src="https://dev.virtualtechnopark.id/assets/images/img-gallery/1.jpg" data-sub-html="<h4>Rapat Persiapan Penjurian Increfest – Kantor Kementerian Perindustrian, Jakarta.</h4>" >
+							<a href="">
+								<img class="img-responsive" src="https://dev.virtualtechnopark.id/assets/images/img-gallery/1.jpg" alt="Thumb-1">
+								<h4 class="text-center mt-3" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Rapat Persiapan Penjurian Increfest – Kantor Kementerian Perindustrian, Jakarta.</h4>
+							</a>
+						</li>
+						<li class="col-sm-6 col-lg-4" data-responsive="https://dev.virtualtechnopark.id/assets/images/img-gallery/2.jpg" data-src="https://dev.virtualtechnopark.id/assets/images/img-gallery/2.jpg" data-sub-html="<h4>Kegiatan Penjurian Awal Increfest 2019 – Harris Hotel & Convention Festival Citylink, Bandung.</h4>" >
+							<a href="">
+								<img class="img-responsive" src="https://dev.virtualtechnopark.id/assets/images/img-gallery/2.jpg" alt="Thumb-1">
+								<h4 class="text-center mt-3" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Kegiatan Penjurian Awal Increfest 2019 – Harris Hotel & Convention Festival Citylink, Bandung.</h4>
+							</a>
+						</li>
+						<li class="col-sm-6 col-lg-4" data-responsive="https://dev.virtualtechnopark.id/assets/images/img-gallery/3.jpg" data-src="https://dev.virtualtechnopark.id/assets/images/img-gallery/3.jpg" data-sub-html="<h4>Breafing Panitia kegiatan Coaching dan Penjurian Akhir</h4>" >
+							<a href="">
+								<img class="img-responsive" src="https://dev.virtualtechnopark.id/assets/images/img-gallery/3.jpg" alt="Thumb-1">
+								<h4 class="text-center mt-3" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Breafing Panitia kegiatan Coaching dan Penjurian Akhir</h4>
+							</a>
+						</li>
+						<li class="col-sm-6 col-lg-4" data-responsive="https://dev.virtualtechnopark.id/assets/images/img-gallery/4.jpg" data-src="https://dev.virtualtechnopark.id/assets/images/img-gallery/4.jpg" data-sub-html="<h4>Panitia yang bertugas di kegiatan Coaching dan Penjurian Akhir</h4>" >
+							<a href="">
+								<img class="img-responsive" src="https://dev.virtualtechnopark.id/assets/images/img-gallery/4.jpg" alt="Thumb-1">
+								<h4 class="text-center mt-3" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Panitia yang bertugas di kegiatan Coaching dan Penjurian Akhir</h4>
+							</a>
+						</li>
+						<li class="col-sm-6 col-lg-4" data-responsive="https://dev.virtualtechnopark.id/assets/images/img-gallery/5.jpg" data-src="https://dev.virtualtechnopark.id/assets/images/img-gallery/5.jpg" data-sub-html="<h4>Kegiatan Coaching Peserta</h4>" >
+							<a href="">
+								<img class="img-responsive" src="https://dev.virtualtechnopark.id/assets/images/img-gallery/5.jpg" alt="Thumb-1">
+								<h4 class="text-center mt-3" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Kegiatan Coaching Peserta</h4>
+							</a>
+						</li>
+						<li class="col-sm-6 col-lg-4" data-responsive="https://dev.virtualtechnopark.id/assets/images/img-gallery/6.jpg" data-src="https://dev.virtualtechnopark.id/assets/images/img-gallery/6.jpg" data-sub-html="<h4>Kegiatan Coaching Peserta 2</h4>" >
+							<a href="">
+								<img class="img-responsive" src="https://dev.virtualtechnopark.id/assets/images/img-gallery/6.jpg" alt="Thumb-1">
+								<h4 class="text-center mt-3" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Kegiatan Coaching Peserta 2</h4>
+							</a>
+						</li>
+						<li class="col-sm-6 col-lg-4" data-responsive="https://dev.virtualtechnopark.id/assets/images/img-gallery/7.jpg" data-src="https://dev.virtualtechnopark.id/assets/images/img-gallery/7.jpg" data-sub-html="<h4>Kegiatan Coaching Bandung</h4>" >
+							<a href="">
+								<img class="img-responsive" src="https://dev.virtualtechnopark.id/assets/images/img-gallery/7.jpg" alt="Thumb-1">
+								<h4 class="text-center mt-3" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Kegiatan Coaching Bandung</h4>
+							</a>
+						</li>
+						<li class="col-sm-6 col-lg-4" data-responsive="https://dev.virtualtechnopark.id/assets/images/img-gallery/12.jpg" data-src="https://dev.virtualtechnopark.id/assets/images/img-gallery/12.jpg" data-sub-html="<h4>Kegiatan Persentasi Produk Digital Peserta di Penjurian Akhir</h4>" >
+							<a href="">
+								<img class="img-responsive" src="https://dev.virtualtechnopark.id/assets/images/img-gallery/12.jpg" alt="Thumb-1">
+								<h4 class="text-center mt-3" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Kegiatan Persentasi Produk Digital Peserta di Penjurian Akhir</h4>
+							</a>
+						</li>
+						<li class="col-sm-6 col-lg-4" data-responsive="https://dev.virtualtechnopark.id/assets/images/img-gallery/9.jpg" data-src="https://dev.virtualtechnopark.id/assets/images/img-gallery/9.jpg" data-sub-html="<h4>Kegiatan Persentasi Produk Digital Peserta di Penjurian Akhir</h4>" >
+							<a href="">
+								<img class="img-responsive" src="https://dev.virtualtechnopark.id/assets/images/img-gallery/9.jpg" alt="Thumb-1">
+								<h4 class="text-center mt-3" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Kegiatan Persentasi Produk Digital Peserta di Penjurian Akhir</h4>
+							</a>
+						</li>
+					</ul>
+					<!-- /Gallery -->
+
+					<!-- Pagination -->
+					<div class="row mb-5">
+						<div class="col-md-6 mt-1 d-none d-md-block">1 - 10 of 234 photos</div>
+						<div class="col-md-6">
+							<div class="float-end">
+								<ul class="pagination">
+									<li class="page-item page-prev disabled">
+										<a class="page-link"   href="javascript:void(0);" tabindex="-1">Prev</a>
+									</li>
+									<li class="page-item active"><a class="page-link"   href="javascript:void(0);">1</a></li>
+									<li class="page-item"><a class="page-link"   href="javascript:void(0);">2</a></li>
+									<li class="page-item"><a class="page-link"   href="javascript:void(0);">3</a></li>
+									<li class="page-item"><a class="page-link"   href="javascript:void(0);">4</a></li>
+									<li class="page-item"><a class="page-link"   href="javascript:void(0);">5</a></li>
+									<li class="page-item page-next">
+										<a class="page-link"   href="javascript:void(0);">Next</a>
+									</li>
+								</ul>
+							</div>
+						</div><!-- COL-END -->
+					</div>
+					<!-- Pagination -->
+				</div>
+				</div>
+
 				<!-- row closed -->
 			</div>
 			<!-- Container closed -->
@@ -490,6 +485,9 @@
 		<!--- JQuery min js --->
 		<script src="../assets/plugins/jquery/jquery.min.js"></script>
 
+		<!--- Datepicker js --->
+		<script src="../assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
+
 		<!--- Bootstrap Bundle js --->
 		<script src="../assets/plugins/bootstrap/popper.min.js"></script>
 		<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -500,22 +498,6 @@
 		<!--- Moment js --->
 		<script src="../assets/plugins/moment/moment.js"></script>
 
-        <!-- DATA TABLE JS-->
-        <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
-        <script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
-        <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
-        <script src="../assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
-        <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
-        <script src="../assets/plugins/datatable/pdfmake/pdfmake.min.js"></script>
-        <script src="../assets/plugins/datatable/pdfmake/vfs_fonts.js"></script>
-        <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
-        <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
-        <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
-        <script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
-        <script src="../assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
-
-		<script src="../assets/js/table-data.js"></script>
-
 		<!--- JQuery sparkline js --->
 		<script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
 
@@ -523,11 +505,10 @@
 		<script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 		<script src="../assets/plugins/perfect-scrollbar/p-scroll.js"></script>
 
-		<!--- Switcher js --->
-		<script src="../assets/switcher/js/switcher.js"></script>
-
-		<!--- Eva-icons js --->
-		<script src="../assets/js/eva-icons.min.js"></script>
+		<!--- Internal Gallery js --->
+		<script src="../assets/plugins/gallery/lightgallery-all.min.js"></script>
+		<script src="../assets/plugins/gallery/jquery.mousewheel.min.js"></script>
+        <script src="../assets/js/gallery.js"></script>
 
 
 
@@ -540,6 +521,9 @@
 		<!--- Right-sidebar js --->
 		<script src="../assets/plugins/sidebar/sidebar.js"></script>
 		<script src="../assets/plugins/sidebar/sidebar-custom.js"></script>
+
+		<!--- Eva-icons js --->
+		<script src="../assets/js/eva-icons.min.js"></script>
 
 		<!--- Index js --->
 		<script src="../assets/js/script.js"></script>

@@ -486,11 +486,52 @@
 						</li>
 						<li class="slide">
 							<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i
-									class="side-menu__icon fa fa-cogs"></i><span class="side-menu__label">Settings Layout</span><i class="angle fe fe-chevron-down"></i></a>
+									class="side-menu__icon fas fa-code-branch"></i><span class="side-menu__label">Settings Layout</span><i class="angle fe fe-chevron-down"></i></a>
 							<ul class="slide-menu">
 								<li class="side-menu__label1"><a href="javascript:void(0);">Apps</a></li>
 								<li><a class="slide-item" href="banner_home.html">Banner Settings</a></li>
 							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/settings*') ? "active" : '' }}" data-bs-toggle="slide" href="javascript:void(0);"><i
+									class="side-menu__icon fa fa-cogs"></i><span class="side-menu__label">Pengaturan</span><i class="angle fe fe-chevron-down"></i></a>
+							<ul class="slide-menu">
+								<li class="side-menu__label1"><a href="javascript:void(0);">Apps</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/gallery*') ? "active" : '' }}" href="gallery-content.html">Gallery Photo & Video</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/supported-industry*') ? "active" : '' }}" href="{{ route('content-industry') }}">Supported Indusry</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/supported-asosiasi*') ? "active" : '' }}" href="{{ route('content-asosiasi') }}">Supported Asosiasi</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/faq*') ? "active" : '' }}" href="{{ route('content-faq') }}">Faq</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/about*') ? "active" : '' }}" href="{{ route('content-about') }}">Tentang Kami / About</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/kontak*') ? "active" : '' }}" href="{{ route('content-kontak') }}">Kontak</a></li>
+								<li class="sub-slide">
+									<a class="slide-item {{ Request::is('dashboard/settings/content/RoadMap*') ? "active" : '' }}" data-bs-toggle="sub-slide" href="javascript:void(0);"><span class="sub-side-menu__label">RoadMap</span><i class="sub-angle fe fe-chevron-down"></i></a>
+									<ul class="sub-slide-menu">
+										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q1*') ? "active" : '' }}" href="{{ route('content-roadmap-Q1') }}">Q1</a></li>
+										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q2*') ? "active" : '' }}" href="{{ route('content-roadmap-Q2') }}">Q2</a></li>
+										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q3*') ? "active" : '' }}" href="{{ route('content-roadmap-Q3') }}">Q3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/mailer*') ? "active" : '' }}" href="{{ route('mail') }}"><i
+									class="side-menu__icon far fa-envelope"></i><span class="side-menu__label">Mail</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/chat*') ? "active" : '' }}" href="{{ route('list-chat') }}"><i
+									class="side-menu__icon bi bi-chat-left-dots"></i><span class="side-menu__label">Chat</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/panduan*') ? "active" : '' }}" href="{{ route('panduan') }}"><i
+									class="side-menu__icon far fa-address-book"></i><span class="side-menu__label">Panduan</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/updated-list') ? "active" : '' }}" href="{{ route('updated-list') }}"><i
+									class="side-menu__icon fab fa-wpforms"></i><span class="side-menu__label">List Update</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('/dashboard/account/profile-detail*') ? "active" : '' }}" href="{{ route('profile-detail') }}"><i
+									class="side-menu__icon fa fa-user"></i><span class="side-menu__label">Activation Account</span></a>
 						</li>
 					</ul>
 
