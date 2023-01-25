@@ -398,7 +398,7 @@
 					<a class="desktop-logo logo-light active" href="index.html"><img src="../assets/img/brand/logo.png"
 							class="main-logo" alt="logo"></a>
 					<a class="desktop-logo logo-dark active" href="index.html"><img
-							src="../assets/img/brand/logo-white.png" class="main-logo" alt="logo"></a>
+							src="../assets/img/brand/logo.png" class="main-logo" alt="logo"></a>
 					<a class="logo-icon mobile-logo icon-light active" href="index.html"><img
 							src="../assets/img/brand/favicon.png" alt="logo"></a>
 					<a class="logo-icon mobile-logo icon-dark active" href="index.html"><img
@@ -459,19 +459,21 @@
 						</li>
 						<li class="slide">
 							<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i
-									class="side-menu__icon zmdi zmdi-city"></i><span class="side-menu__label">Member /
+									class="side-menu__icon far fa-building"></i><span class="side-menu__label">Member /
 									Squad</span><i class="angle fe fe-chevron-down"></i></a>
 							<ul class="slide-menu">
 								<li class="side-menu__label1"><a href="javascript:void(0);">Apps</a></li>
+								<li><a class="slide-item" href="kemenprin.html">Kemenperin</a></li>
 								<li><a class="slide-item" href="technopark.html">TechnoPark</a></li>
 								<li><a class="slide-item" href="startup.html">StartUp</a></li>
 								<li><a class="slide-item" href="asosiasi.html">Asosiasi</a></li>
 								<li><a class="slide-item" href="komunitas.html">Komunitas</a></li>
+								<li><a class="slide-item" href="peserta_event.html">Peserta Event</a></li>
 							</ul>
 						</li>
 						<li class="slide">
 							<a class="side-menu__item" href="berita.html"><i
-									class="side-menu__icon mdi mdi-amplifier"></i><span
+									class="side-menu__icon far fa-newspaper"></i><span
 									class="side-menu__label">Berita</span></a>
 						</li>
 						<li class="slide">
@@ -485,30 +487,53 @@
 									Software</span></a>
 						</li>
 						<li class="slide">
-							<a class="side-menu__item" href="coment.html"><i
-									class="side-menu__icon far fa-comments"></i><span class="side-menu__label">Koment
-									Blog</span></a>
-						</li>
-						<li class="slide">
-							<a class="side-menu__item" href="gallery.html"><i
-									class="side-menu__icon fa fa-camera-retro"></i><span
-									class="side-menu__label">Gallery</span></a>
-						</li>
-						<li class="slide">
-							<a class="side-menu__item" href="panduan_member.html"><i
-									class="side-menu__icon fas fa-american-sign-language-interpreting"></i><span
-									class="side-menu__label">Panduan Online </span></a>
-						</li>
-						<li class="slide">
 							<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i
-									class="side-menu__icon fa fa-cogs"></i><span class="side-menu__label">Settings Layout</span><i class="angle fe fe-chevron-down"></i></a>
+									class="side-menu__icon fas fa-code-branch"></i><span class="side-menu__label">Settings Layout</span><i class="angle fe fe-chevron-down"></i></a>
 							<ul class="slide-menu">
 								<li class="side-menu__label1"><a href="javascript:void(0);">Apps</a></li>
-								<li><a class="slide-item" href="banner_home.html">Banner Home</a></li>
-								<li><a class="slide-item" href="banner_event.html">Banner Event</a></li>
-								<li><a class="slide-item" href="banner_produk.html">Banner_Produk</a></li>
-								<li><a class="slide-item" href="banner_member.html">Banner_Member</a></li>
+								<li><a class="slide-item" href="banner_home.html">Banner Settings</a></li>
 							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/settings*') ? "active" : '' }}" data-bs-toggle="slide" href="javascript:void(0);"><i
+									class="side-menu__icon fa fa-cogs"></i><span class="side-menu__label">Pengaturan</span><i class="angle fe fe-chevron-down"></i></a>
+							<ul class="slide-menu">
+								<li class="side-menu__label1"><a href="javascript:void(0);">Apps</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/gallery*') ? "active" : '' }}" href="gallery-content.html">Gallery Photo & Video</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/supported-industry*') ? "active" : '' }}" href="supported-industry.html">Supported Indusry</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/supported-asosiasi*') ? "active" : '' }}" href="supported-asosiasi.html">Supported Asosiasi</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/faq*') ? "active" : '' }}" href="faq.html">Faq</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/about*') ? "active" : '' }}" href="tentang-kami.html">Tentang Kami / About</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/kontak*') ? "active" : '' }}" href="kontak.html">Kontak</a></li>
+								<li class="sub-slide">
+									<a class="slide-item {{ Request::is('dashboard/settings/content/RoadMap*') ? "active" : '' }}" data-bs-toggle="sub-slide" href="javascript:void(0);"><span class="sub-side-menu__label">RoadMap</span><i class="sub-angle fe fe-chevron-down"></i></a>
+									<ul class="sub-slide-menu">
+										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q1*') ? "active" : '' }}" href="q1.html">Q1</a></li>
+										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q2*') ? "active" : '' }}" href="q2.html">Q2</a></li>
+										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q3*') ? "active" : '' }}" href="q3.html">Q3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/mailer*') ? "active" : '' }}" href="mail.html"><i
+									class="side-menu__icon far fa-envelope"></i><span class="side-menu__label">Mail</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/chat*') ? "active" : '' }}" href="chat.html"><i
+									class="side-menu__icon bi bi-chat-left-dots"></i><span class="side-menu__label">Chat</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/panduan*') ? "active" : '' }}" href="panduan.html"><i
+									class="side-menu__icon far fa-address-book"></i><span class="side-menu__label">Panduan</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/updated-list') ? "active" : '' }}" href="list-update.html"><i
+									class="side-menu__icon fab fa-wpforms"></i><span class="side-menu__label">List Update</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('/dashboard/account/profile-detail*') ? "active" : '' }}" href="profile-detail.html"><i
+									class="side-menu__icon fa fa-user"></i><span class="side-menu__label">Activation Account</span></a>
 						</li>
 					</ul>
 
@@ -520,6 +545,7 @@
 			</aside>
 		</div>
 		<!-- main-sidebar -->
+
 		<!-- main-content -->
 		<div class="main-content app-content">
 
@@ -569,28 +595,32 @@
 				</div>
 
 				<!-- breadcrumb -->
-				<div class="row">
-                    <div class="col-lg-12">
-                        <div class="card mg-b-20">
-                            <div class="card-body d-flex p-3">
-                                <div class="main-content-label mb-0 mg-t-8">Post Banner</div>
-                            </div>
-                        </div>
-                    </div>
-					<div class="col-lg-12 col-md-12">
-						<div class="card">
-							<div class="card-body">
-                                <h4></h4>
-								<div class="p-4 border mb-4 form-group">
-                                    <div>
-                                        <input id="demo" type="file" name="files" accept=" image/jpeg, image/png, text/html, application/zip, text/css, text/js" multiple />
-                                    </div>
-                                </div>
-                                    <input class="btn btn-primary" type="submit" value="Submit">
-                                </div>
+				<<div class="row">
+					<div class="col-lg-12">
+						<div class="card mg-b-20">
+							<div class="card-body d-flex p-3">
+								<div class="main-content-label mb-0 mg-t-8">Post Banner Home</div>
 							</div>
 						</div>
 					</div>
+					<div class="col-lg-12 col-md-12">
+						<div class="card">
+							<div class="card-body">
+								<div class="d-flex">
+									<div class="col-lg-6">
+										<label for="" class="form-label text-center">Poster Banner</label>
+										<input type="file" class="dropify" data-height="200"/>
+									</div>
+									<div class="col-lg-6">
+										<label for="" class="form-label text-center">Video Banner</label>
+										<input type="file" class="dropify" data-height="200" />
+									</div>
+								</div><br>
+								<input class="btn btn-primary" type="submit" value="Upload">
+							</div>
+						</div>
+					</div>
+				</div>
 				<!-- /breadcrumb -->
 
 				<!-- row -->

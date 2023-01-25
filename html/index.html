@@ -457,7 +457,7 @@
 						</li>
 						<li class="slide">
 							<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i
-									class="side-menu__icon zmdi zmdi-city"></i><span class="side-menu__label">Member /
+									class="side-menu__icon far fa-building"></i><span class="side-menu__label">Member /
 									Squad</span><i class="angle fe fe-chevron-down"></i></a>
 							<ul class="slide-menu">
 								<li class="side-menu__label1"><a href="javascript:void(0);">Apps</a></li>
@@ -471,7 +471,7 @@
 						</li>
 						<li class="slide">
 							<a class="side-menu__item" href="berita.html"><i
-									class="side-menu__icon mdi mdi-amplifier"></i><span
+									class="side-menu__icon far fa-newspaper"></i><span
 									class="side-menu__label">Berita</span></a>
 						</li>
 						<li class="slide">
@@ -498,39 +498,39 @@
 							<ul class="slide-menu">
 								<li class="side-menu__label1"><a href="javascript:void(0);">Apps</a></li>
 								<li><a class="slide-item {{ Request::is('dashboard/settings/content/gallery*') ? "active" : '' }}" href="gallery-content.html">Gallery Photo & Video</a></li>
-								<li><a class="slide-item {{ Request::is('dashboard/settings/content/supported-industry*') ? "active" : '' }}" href="{{ route('content-industry') }}">Supported Indusry</a></li>
-								<li><a class="slide-item {{ Request::is('dashboard/settings/content/supported-asosiasi*') ? "active" : '' }}" href="{{ route('content-asosiasi') }}">Supported Asosiasi</a></li>
-								<li><a class="slide-item {{ Request::is('dashboard/settings/content/faq*') ? "active" : '' }}" href="{{ route('content-faq') }}">Faq</a></li>
-								<li><a class="slide-item {{ Request::is('dashboard/settings/content/about*') ? "active" : '' }}" href="{{ route('content-about') }}">Tentang Kami / About</a></li>
-								<li><a class="slide-item {{ Request::is('dashboard/settings/content/kontak*') ? "active" : '' }}" href="{{ route('content-kontak') }}">Kontak</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/supported-industry*') ? "active" : '' }}" href="supported-industry.html">Supported Indusry</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/supported-asosiasi*') ? "active" : '' }}" href="supported-asosiasi.html">Supported Asosiasi</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/faq*') ? "active" : '' }}" href="faq.html">Faq</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/about*') ? "active" : '' }}" href="tentang-kami.html">Tentang Kami / About</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/kontak*') ? "active" : '' }}" href="kontak.html">Kontak</a></li>
 								<li class="sub-slide">
 									<a class="slide-item {{ Request::is('dashboard/settings/content/RoadMap*') ? "active" : '' }}" data-bs-toggle="sub-slide" href="javascript:void(0);"><span class="sub-side-menu__label">RoadMap</span><i class="sub-angle fe fe-chevron-down"></i></a>
 									<ul class="sub-slide-menu">
-										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q1*') ? "active" : '' }}" href="{{ route('content-roadmap-Q1') }}">Q1</a></li>
-										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q2*') ? "active" : '' }}" href="{{ route('content-roadmap-Q2') }}">Q2</a></li>
-										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q3*') ? "active" : '' }}" href="{{ route('content-roadmap-Q3') }}">Q3</a></li>
+										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q1*') ? "active" : '' }}" href="q1.html">Q1</a></li>
+										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q2*') ? "active" : '' }}" href="q2.html">Q2</a></li>
+										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q3*') ? "active" : '' }}" href="q3.html">Q3</a></li>
 									</ul>
 								</li>
 							</ul>
 						</li>
 						<li class="slide">
-							<a class="side-menu__item {{ Request::is('dashboard/mailer*') ? "active" : '' }}" href="{{ route('mail') }}"><i
+							<a class="side-menu__item {{ Request::is('dashboard/mailer*') ? "active" : '' }}" href="mail.html"><i
 									class="side-menu__icon far fa-envelope"></i><span class="side-menu__label">Mail</span></a>
 						</li>
 						<li class="slide">
-							<a class="side-menu__item {{ Request::is('dashboard/chat*') ? "active" : '' }}" href="{{ route('list-chat') }}"><i
+							<a class="side-menu__item {{ Request::is('dashboard/chat*') ? "active" : '' }}" href="chat.html"><i
 									class="side-menu__icon bi bi-chat-left-dots"></i><span class="side-menu__label">Chat</span></a>
 						</li>
 						<li class="slide">
-							<a class="side-menu__item {{ Request::is('dashboard/panduan*') ? "active" : '' }}" href="{{ route('panduan') }}"><i
+							<a class="side-menu__item {{ Request::is('dashboard/panduan*') ? "active" : '' }}" href="panduan.html"><i
 									class="side-menu__icon far fa-address-book"></i><span class="side-menu__label">Panduan</span></a>
 						</li>
 						<li class="slide">
-							<a class="side-menu__item {{ Request::is('dashboard/updated-list') ? "active" : '' }}" href="{{ route('updated-list') }}"><i
+							<a class="side-menu__item {{ Request::is('dashboard/updated-list') ? "active" : '' }}" href="list-update.html"><i
 									class="side-menu__icon fab fa-wpforms"></i><span class="side-menu__label">List Update</span></a>
 						</li>
 						<li class="slide">
-							<a class="side-menu__item {{ Request::is('/dashboard/account/profile-detail*') ? "active" : '' }}" href="{{ route('profile-detail') }}"><i
+							<a class="side-menu__item {{ Request::is('/dashboard/account/profile-detail*') ? "active" : '' }}" href="profile-detail.html"><i
 									class="side-menu__icon fa fa-user"></i><span class="side-menu__label">Activation Account</span></a>
 						</li>
 					</ul>
@@ -929,12 +929,11 @@
 									<div class="card mg-b-20">
 										<div class="card-body d-flex p-3">
 											<div class="main-content-label mb-0 mg-t-8">UPDATE BLOG / BERTA</div>
-											<div class="ms-auto d-flex">
-												<a class="" href="edit-post.html">
-													<button class="btn btn-primary" style="border-radius: 20px;"> <i class="fa fa-user-plus me-1"></i> Create data</button>
-													<button class="btn btn-warning" style="border-radius: 20px;"> <i class="fa fa-wrench me-1"></i> Edit Data</button>
-													<button class="btn btn-danger" style="border-radius: 20px;"> <i class="fa fa-trash me-1"></i> Delete data</button>
+											<div class="ms-auto">
+												<a class="" href="post_berita.html"> <button class="btn btn-primary" style="border-radius: 20px;"> <i class="fa fa-user-plus me-1"></i> Create data</button>
 												</a>
+												   <a href="edit_berita.html"><button class="btn btn-warning" style="border-radius: 20px;"> <i class="fa fa-wrench me-1"></i> Edit Data</button></a> 
+													<button class="btn btn-danger" style="border-radius: 20px;"> <i class="fa fa-trash me-1"></i> Delete data</button>
 											</div>
 										</div>
 									</div>
@@ -943,124 +942,153 @@
 							<div class="card">
 								<div class="card-body">
 									<div class="table-responsive">
-										<table id="example3"
+										<table id="file-datatable"
 											class="border-top-0  table table-bordered text-nowrap border-bottom">
 											<thead>
 												<tr>
+													<th></th>
+													<th>No</th>
 													<th class="border-bottom-0">Title</th>
 													<th class="border-bottom-0">Author</th>
 													<th class="border-bottom-0">Category</th>
 													<th class="border-bottom-0">Date</th>
+													<th class="border-bottom-0">Alert</th>
 													<th class="border-bottom-0">Status</th>
-													<th class="border-bottom-0">Checked</th>
+													<th class="border-bottom-0">Preview</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
+													<td><input type="checkbox"></td>
+													<td>1</td>
 													<td>Kopi Kenangan, Dari Mantan Jadi Startup Unicorn</td>
 													<td>Admin</td>
 													<td>Seminar</td>
 													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
+													<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>					
+													<td><a href="https://dev.virtualtechnopark.id/blog/detail_blog1"><span class="badge bg-pill bg-primary">Preview</span></a></td>												
 												</tr>
 												<tr>
+													<td><input type="checkbox"></td>
+													<td>2</td>
 													<td>Di Tahun Macan, Startup Pelacak Kendaraan Siap Menerkam</td>
 													<td>Admin</td>
 													<td>Seminar</td>
 													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
+													<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>					
+													<td><a href="https://dev.virtualtechnopark.id/blog/detail_blog1"><span class="badge bg-pill bg-primary">Preview</span></a></td>												
 												</tr>
 												<tr>
-													<td>Jadi Unicorn ke-7 di Indonesia, Startup Ini Hanya Butuh Waktu
-														2,5 Tahun</td>
+													<td><input type="checkbox"></td>
+													<td>3</td>
+													<td>Jadi Unicorn ke-7 di Indonesia, Startup Ini Hanya Butuh Waktu 2,5 Tahun</td>
 													<td>Admin</td>
 													<td>Seminar</td>
 													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
+													<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>					
+													<td><a href="https://dev.virtualtechnopark.id/blog/detail_blog1"><span class="badge bg-pill bg-primary">Preview</span></a></td>												
 												</tr>
 												<tr>
-													<td>J&T Express Jadi Unicorn Baru Indonesia, Valuasinya Rp 113,5
-														Triliun</td>
+													<td><input type="checkbox"></td>
+													<td>4</td>
+													<td>J&T Express Jadi Unicorn Baru Indonesia, Valuasinya Rp 113,5 Triliun</td>
 													<td>Admin</td>
 													<td>Seminar</td>
 													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
+													<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>					
+													<td><a href="https://dev.virtualtechnopark.id/blog/detail_blog1"><span class="badge bg-pill bg-primary">Preview</span></a></td>												
 												</tr>
 												<tr>
-													<td>Disuntik Dana Segar Rp 2,1 T, Xendit Jadi Startup Unicorn
-														Terbaru RI
-													</td>
+													<td><input type="checkbox"></td>
+													<td>6</td>
+													<td>Disuntik Dana Segar Rp 2,1 T, Xendit Jadi Startup Unicorn Terbaru RI</td>
 													<td>Admin</td>
 													<td>Seminar</td>
 													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
+													<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>					
+													<td><a href="https://dev.virtualtechnopark.id/blog/detail_blog1"><span class="badge bg-pill bg-primary">Preview</span></a></td>												
 												</tr>
 												<tr>
-													<td>Heboh Iran kalah melawan Inggris, Ini tanggapan Lesti dan billar
-													</td>
+													<td><input type="checkbox"></td>
+													<td>7</td>
+													<td>Heboh Iran kalah melawan Inggris, Ini tanggapan Lesti dan billar</td>
 													<td>Admin</td>
 													<td>Seminar</td>
 													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
+													<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>					
+													<td><a href="https://dev.virtualtechnopark.id/blog/detail_blog1"><span class="badge bg-pill bg-primary">Preview</span></a></td>												
 												</tr>
 												<tr>
-													<td>Animasi Upin dan ipin akang resmi di berhentikan.. tapi boong
-													</td>
+													<td><input type="checkbox"></td>
+													<td>8</td>
+													<td>Animasi Upin dan ipin akang resmi di berhentikan.. tapi boong</td>
 													<td>Admin</td>
 													<td>Seminar</td>
 													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
+													<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>					
+													<td><a href="https://dev.virtualtechnopark.id/blog/detail_blog1"><span class="badge bg-pill bg-primary">Preview</span></a></td>												
 												</tr>
 												<tr>
-													<td>SiCepat Suntik Modal Perusahaan Podcast Milik Deddy Corbuzier
-													</td>
+													<td><input type="checkbox"></td>
+													<td>9</td>
+													<td>SiCepat Suntik Modal Perusahaan Podcast Milik Deddy Corbuzier</td>
 													<td>Admin</td>
 													<td>Seminar</td>
 													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
+													<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>					
+													<td><a href="https://dev.virtualtechnopark.id/blog/detail_blog1"><span class="badge bg-pill bg-primary">Preview</span></a></td>												
 												</tr>
 												<tr>
-													<td>Startup Perikanan eFishery Memiliki Target Pasar Thailand, lalu
-														Cina dan India
-													</td>
+													<td><input type="checkbox"></td>
+													<td>10</td>
+												<td>Startup Perikanan eFishery Memiliki Target Pasar Thailand, lalu Cina dan India</td>
 													<td>Admin</td>
 													<td>Seminar</td>
 													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
+													<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>					
+													<td><a href="https://dev.virtualtechnopark.id/blog/detail_blog1"><span class="badge bg-pill bg-primary">Preview</span></a></td>												
 												</tr>
 												<tr>
-													<td>Resmi di kabarkan bahwa Karim Benzema tidak dapat ikut pildun
-													</td>
+													<td><input type="checkbox"></td>
+													<td>11</td>
+													<td>Resmi di kabarkan bahwa Karim Benzema tidak dapat ikut pildun</td>
 													<td>Admin</td>
 													<td>Seminar</td>
 													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
+													<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>					
+													<td><a href="https://dev.virtualtechnopark.id/blog/detail_blog1"><span class="badge bg-pill bg-primary">Preview</span></a></td>												
 												</tr>
 												<tr>
+													<td><input type="checkbox"></td>
+													<td>12</td>
 													<td>Abiyasa telah membuka open user untuk GHI</td>
 													<td>Admin</td>
 													<td>Seminar</td>
 													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
+													<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>					
+													<td><a href="https://dev.virtualtechnopark.id/blog/detail_blog1"><span class="badge bg-pill bg-primary">Preview</span></a></td>												
 												</tr>
 												<tr>
+													<td><input type="checkbox"></td>
+													<td>13</td>
 													<td>APLIKASI AI UNTUK UMKM</td>
 													<td>Admin</td>
 													<td>Seminar</td>
 													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
+													<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>					
+													<td><a href="https://dev.virtualtechnopark.id/blog/detail_blog1"><span class="badge bg-pill bg-primary">Preview</span></a></td>												
 												</tr>
 											</tbody>
 										</table>
@@ -1323,8 +1351,6 @@
 							</div>
 						</div>
 					</div>
-
-
 					<div class="row row-sm">
 						<div class="col-md-12 col-xl-4 col-lg-4 col-sm-12">
 							<div class="card">
@@ -1528,6 +1554,187 @@
 											</div>
 										</div>
 									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12 mt-3">
+						<div class="card mg-b-20">
+							<div class="card-body d-flex p-3">
+								<div class="main-content-label mb-0 mg-t-8">EVENT & PROGRAM</div>
+								<div class="ms-auto">
+									
+									<a class="" href="post_event.html">    <button class="btn btn-primary" style="border-radius: 20px;"> <i class="fa fa-user-plus me-1"></i> Create data</button>
+									</a>
+										<a href="edit_event.html"><button class="btn btn-warning" style="border-radius: 20px;"> <i class="fa fa-wrench me-1"></i> Edit Data</button></a>
+										<button class="btn btn-danger" style="border-radius: 20px;"> <i class="fa fa-trash me-1"></i> Delete data</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-12 col-md-6">
+						<div class="card">
+							<div class="card-body">
+								<div class="table-responsive">
+									<table id="basic-datatable" class="border-top-0  table table-bordered text-nowrap border-bottom">
+										<thead>
+											<tr>
+												<th class="border-bottom-0"></th>
+												<th class="border-bottom-0">No</th>
+												<th class="border-bottom-0">Judul Event</th>
+												<th class="border-bottom-0">Organized By</th>
+												<th class="border-bottom-0">H</th>
+												<th class="border-bottom-0">Category</th>
+												<th class="border-bottom-0">Jumlah Peserta</th>
+												<th class="border-bottom-0">User Daftar</th>
+												<th class="border-bottom-0">Tanggal Event</th>
+												<th class="border-bottom-0">Keterangan</th>
+												<th class="border-bottom-0">Alert</th>
+												<th class="border-bottom-0">Status</th>
+												<th class="border-bottom-0">Priview</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>1</td>
+												<td>Bimtek Virtual</td>
+												<td>Bandung TechnoPark</td>
+												<td style="font-weight: bold;color: grey;">PASSED</td>
+												<td>WorkShop</td>
+												<td>250+</td>
+												<td>Alghi Arif Rahman</td>
+												<td>08-07-2023</td>
+												<td><span class="badge badge-pill bg-primary">PAID</span> / <span class="badge badge-pill bg-warning">BERBAYAR</span></td>
+												<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+												<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
+												<td><div class="dropdown">
+													<span type="button" class="btn btn-sm btn-info dropdown-toggle" data-bs-toggle="dropdown">
+															Preview
+														</span>
+													<div class="dropdown-menu">
+														<a class="dropdown-item" href="javascript:void(0)">Detail</a>
+														<a class="dropdown-item" href="javascript:void(0)">Preview</a>
+													</div>
+												</div></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>2</td>
+												<td>Coaching</td>
+												<td>Bandung TechnoPark</td>
+												<td style="font-weight: bold;color: grey;">-3</td>
+												<td>Seminar</td>
+												<td>150+</td>
+												<td>Stev Jobs</td>
+												<td>06-07-2023</td>
+												<td><span class="badge badge-pill bg-primary">PAID</span> / <span class="badge badge-pill bg-warning">BERBAYAR</span></td>
+												<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+												<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
+												<td><div class="dropdown">
+													<span type="button" class="btn btn-sm btn-info dropdown-toggle" data-bs-toggle="dropdown">
+															Preview
+														</span>
+													<div class="dropdown-menu">
+														<a class="dropdown-item" href="javascript:void(0)">Detail</a>
+														<a class="dropdown-item" href="javascript:void(0)">Preview</a>
+													</div>
+												</div></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>3</td>
+												<td>Sosialisasi</td>
+												<td>Rice Bandung</td>
+												<td style="font-weight: bold;color: grey;">-2</td>
+												<td>Software</td>
+												<td>2100+</td>
+												<td>Shaffindo</td>
+												<td>01-03-2023</td>
+												<td><span class="badge badge-pill bg-success">FREE</span></td>
+												<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+												<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
+												<td><div class="dropdown">
+													<span type="button" class="btn btn-sm btn-info dropdown-toggle" data-bs-toggle="dropdown">
+															Preview
+														</span>
+													<div class="dropdown-menu">
+														<a class="dropdown-item" href="javascript:void(0)">Detail</a>
+														<a class="dropdown-item" href="javascript:void(0)">Preview</a>
+													</div>
+												</div></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>4</td>
+												<td>Bisnis Motching</td>
+												<td>Semarang Technopark</td>
+												<td style="font-weight: bold;color: grey;">PASSED</td>
+												<td>Software</td>
+												<td>2100+</td>
+												<td>Shaffindo</td>
+												<td>01-03-2023</td>
+												<td><span class="badge badge-pill bg-success">FREE</span> / <span class="badge badge-pill bg-success">GRATIS</span> </td>
+												<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+												<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
+												<td><div class="dropdown">
+													<span type="button" class="btn btn-sm btn-info dropdown-toggle" data-bs-toggle="dropdown">
+															Preview
+														</span>
+													<div class="dropdown-menu">
+														<a class="dropdown-item" href="javascript:void(0)">Detail</a>
+														<a class="dropdown-item" href="javascript:void(0)">Preview</a>
+													</div>
+												</div></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>5</td>
+												<td>Prototype Days</td>
+												<td>iCommits</td>
+												<td style="font-weight: bold;color: grey;">-</td>
+												<td>Software</td>
+												<td> 12 </td>
+												<td>Antony</td>
+												<td>01-03-2023</td>
+												<td><span class="badge badge-pill bg-success">FREE</span> / <span class="badge badge-pill bg-success">GRATIS</span> </td>
+												<td><span class="badge bg-pill bg-danger">NOT APPROVEL</span></td>
+												<td><span class="badge bg-pill bg-danger">NOT PUBLISHED</span></td>
+												<td><div class="dropdown">
+													<span type="button" class="btn btn-sm btn-info dropdown-toggle" data-bs-toggle="dropdown">
+															Preview
+														</span>
+													<div class="dropdown-menu">
+														<a class="dropdown-item" href="javascript:void(0)">Detail</a>
+														<a class="dropdown-item" href="javascript:void(0)">Preview</a>
+													</div>
+												</div></td>
+											</tr>
+											<tr>
+												<td><input type="checkbox"></td>
+												<td>6</td>
+												<td>StartUp Award</td>
+												<td>Ainaki</td>
+												<td style="font-weight: bold;color: grey;">-5</td>
+												<td>Software</td>
+												<td> 300+ </td>
+												<td>Sandhika Galih</td>
+												<td>01-03-2023</td>
+												<td><span class="badge badge-pill bg-primary">PAID</span> / <span class="badge badge-pill bg-warning">BERBAYAR</span></td>
+												<td><span class="badge bg-pill bg-success">APPROVEL</span></td>
+												<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
+												<td><div class="dropdown">
+													<span type="button" class="btn btn-sm btn-info dropdown-toggle" data-bs-toggle="dropdown">
+															Preview
+														</span>
+													<div class="dropdown-menu">
+														<a class="dropdown-item" href="javascript:void(0)">Detail</a>
+														<a class="dropdown-item" href="javascript:void(0)">Preview</a>
+													</div>
+												</div></td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>

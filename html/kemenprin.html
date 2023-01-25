@@ -457,7 +457,7 @@
 						</li>
 						<li class="slide">
 							<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i
-									class="side-menu__icon zmdi zmdi-city"></i><span class="side-menu__label">Member /
+									class="side-menu__icon far fa-building"></i><span class="side-menu__label">Member /
 									Squad</span><i class="angle fe fe-chevron-down"></i></a>
 							<ul class="slide-menu">
 								<li class="side-menu__label1"><a href="javascript:void(0);">Apps</a></li>
@@ -471,7 +471,7 @@
 						</li>
 						<li class="slide">
 							<a class="side-menu__item" href="berita.html"><i
-									class="side-menu__icon mdi mdi-amplifier"></i><span
+									class="side-menu__icon far fa-newspaper"></i><span
 									class="side-menu__label">Berita</span></a>
 						</li>
 						<li class="slide">
@@ -485,30 +485,53 @@
 									Software</span></a>
 						</li>
 						<li class="slide">
-							<a class="side-menu__item" href="coment.html"><i
-									class="side-menu__icon far fa-comments"></i><span class="side-menu__label">Koment
-									Blog</span></a>
-						</li>
-						<li class="slide">
-							<a class="side-menu__item" href="gallery.html"><i
-									class="side-menu__icon fa fa-camera-retro"></i><span
-									class="side-menu__label">Gallery</span></a>
-						</li>
-						<li class="slide">
-							<a class="side-menu__item" href="panduan_member.html"><i
-									class="side-menu__icon fas fa-american-sign-language-interpreting"></i><span
-									class="side-menu__label">Panduan Online </span></a>
-						</li>
-						<li class="slide">
 							<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i
-									class="side-menu__icon fa fa-cogs"></i><span class="side-menu__label">Settings Layout</span><i class="angle fe fe-chevron-down"></i></a>
+									class="side-menu__icon fas fa-code-branch"></i><span class="side-menu__label">Settings Layout</span><i class="angle fe fe-chevron-down"></i></a>
 							<ul class="slide-menu">
 								<li class="side-menu__label1"><a href="javascript:void(0);">Apps</a></li>
-								<li><a class="slide-item" href="banner_home.html">Banner Home</a></li>
-								<li><a class="slide-item" href="banner_event.html">Banner Event</a></li>
-								<li><a class="slide-item" href="banner_produk.html">Banner_Produk</a></li>
-								<li><a class="slide-item" href="banner_member.html">Banner_Member</a></li>
+								<li><a class="slide-item" href="banner_home.html">Banner Settings</a></li>
 							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/settings*') ? "active" : '' }}" data-bs-toggle="slide" href="javascript:void(0);"><i
+									class="side-menu__icon fa fa-cogs"></i><span class="side-menu__label">Pengaturan</span><i class="angle fe fe-chevron-down"></i></a>
+							<ul class="slide-menu">
+								<li class="side-menu__label1"><a href="javascript:void(0);">Apps</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/gallery*') ? "active" : '' }}" href="gallery-content.html">Gallery Photo & Video</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/supported-industry*') ? "active" : '' }}" href="supported-industry.html">Supported Indusry</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/supported-asosiasi*') ? "active" : '' }}" href="supported-asosiasi.html">Supported Asosiasi</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/faq*') ? "active" : '' }}" href="faq.html">Faq</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/about*') ? "active" : '' }}" href="tentang-kami.html">Tentang Kami / About</a></li>
+								<li><a class="slide-item {{ Request::is('dashboard/settings/content/kontak*') ? "active" : '' }}" href="kontak.html">Kontak</a></li>
+								<li class="sub-slide">
+									<a class="slide-item {{ Request::is('dashboard/settings/content/RoadMap*') ? "active" : '' }}" data-bs-toggle="sub-slide" href="javascript:void(0);"><span class="sub-side-menu__label">RoadMap</span><i class="sub-angle fe fe-chevron-down"></i></a>
+									<ul class="sub-slide-menu">
+										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q1*') ? "active" : '' }}" href="q1.html">Q1</a></li>
+										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q2*') ? "active" : '' }}" href="q2.html">Q2</a></li>
+										<li><a class="sub-side-menu__item {{ Request::is('dashboard/settings/content/RoadMap/Q3*') ? "active" : '' }}" href="q3.html">Q3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/mailer*') ? "active" : '' }}" href="mail.html"><i
+									class="side-menu__icon far fa-envelope"></i><span class="side-menu__label">Mail</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/chat*') ? "active" : '' }}" href="chat.html"><i
+									class="side-menu__icon bi bi-chat-left-dots"></i><span class="side-menu__label">Chat</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/panduan*') ? "active" : '' }}" href="panduan.html"><i
+									class="side-menu__icon far fa-address-book"></i><span class="side-menu__label">Panduan</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('dashboard/updated-list') ? "active" : '' }}" href="list-update.html"><i
+									class="side-menu__icon fab fa-wpforms"></i><span class="side-menu__label">List Update</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item {{ Request::is('/dashboard/account/profile-detail*') ? "active" : '' }}" href="profile-detail.html"><i
+									class="side-menu__icon fa fa-user"></i><span class="side-menu__label">Activation Account</span></a>
 						</li>
 					</ul>
 
@@ -574,470 +597,326 @@
 				<!-- main-content-body -->
 				<div class="main-content-body">
 					<div class="row row-sm">
-                          <!-- col -->
-        <div class="col-lg-12 mt-3">
-            <div class="card mg-b-20">
-                <div class="card-body d-flex p-3">
-                    <div class="main-content-label mb-0 mg-t-8">DAFTAR APPROVEL VIA ADMIN KEMENPRIN</div>
-                    <div class="ms-auto">
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /col -->
-        <div class="col-md-6 col-lg-3 col-xl-3">
-            <div class="card">
-                <div class="card-body" style="background-color: salmon ;border: white;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;color: white;">
-                    <ul class="sales-session">
-                        <li style="margin-top: -7px;">
-                            <h6>Software : <span class="counter number-font">38</span></h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Aplikasi Mobile : <span class="counter number-font">96</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Aplikasi Dekstop : <span class="counter number-font">126</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Aplikasi Website : <span class="counter number-font">206</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Bigdata : <span class="counter number-font">896</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Cloud Computing : <span class="counter number-font">166</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Article Intelligent : <span class="counter number-font">206</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Speech Recog : <span class="counter number-font">416</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Video Multimedia : <span class="counter number-font">416</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Embeded System : <span class="counter number-font">38</span></h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Internet of Things : <span class="counter number-font">96</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Robotik : <span class="counter number-font">126</span> </h6>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3 col-xl-3">
-            <div class="card">
-                <div class="card-body" style="background-color: #1c8759 ;border: white;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;color: white;">
-                    <ul class="sales-session">
-                        <li style="margin-top: -7px;">
-                            <h6>Elektronika : <span class="counter number-font">206</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Micro Controller : <span class="counter number-font">896</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Chipset : <span class="counter number-font">166</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Network / Jaringan : <span class="counter number-font">206</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Telekomunikasi : <span class="counter number-font">416</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Hardware : <span class="counter number-font">26</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Animasi 2D : <span class="counter number-font">38</span></h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Animasi 3D : <span class="counter number-font">96</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Game 2D/3D : <span class="counter number-font">126</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Motion Graphic : <span class="counter number-font">206</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Desain Grafis : <span class="counter number-font">896</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Desain Web : <span class="counter number-font">896</span> </h6>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3 col-xl-3">
-            <div class="card">
-                <div class="card-body" style="background-color: #1c8759 ;border: white;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;color: white;">
-                    <ul class="sales-session">
-                        <li style="margin-top: -7px;">
-                            <h6>Desain Produk : <span class="counter number-font">206</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Komik : <span class="counter number-font">416</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Film & Advertising : <span class="counter number-font">26</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Digital Marketing : <span class="counter number-font">38</span></h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Ecommerce : <span class="counter number-font">96</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Transportasi : <span class="counter number-font">126</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Edukasi : <span class="counter number-font">206</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Kesehatan : <span class="counter number-font">896</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Pertanian : <span class="counter number-font">166</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Fintech : <span class="counter number-font">96</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Fintech : <span class="counter number-font">206</span> </h6>
-                        </li>
-                        <li style="margin-top: -7px;">
-                            <h6>Blockchain : <span class="counter number-font">416</span> </h6>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3 col-xl-3">
-            <div class="card">
-                <div class="card-body" style="background-color: salmon ;border: white;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;color: white;">
-                    <ul class="sales-session">
-                        <li>
-                            <h6>Inkubator bisnis : <span class="counter number-font">206</span> </h6>
-                        </li>
-                        <li>
-                            <h6>Coaching : <span class="counter number-font">416</span> </h6>
-                        </li>
-                        <li>
-                            <h6>CoWorking Spase : <span class="counter number-font">26</span> </h6>
-                        </li>
-                        <li>
-                            <h6>Virtual Office : <span class="counter number-font">206</span> </h6>
-                        </li>
-                        <li>
-                            <h6>Training : <span class="counter number-font">416</span> </h6>
-                        </li>
-                        <li>
-                            <h6>Sertifikasi : <span class="counter number-font">416</span> </h6>
-                        </li>
-                        <li>
-                            <h6>Konsultan IT : <span class="counter number-font">416</span> </h6>
-                        </li>
-                        <li>
-                            <h6>Event Organizer : <span class="counter number-font">416</span> </h6>
-                        </li>
-                        <li>
-                            <h6>Industri Pabrik : <span class="counter number-font">416</span> </h6>
-                        </li>
-                        <li style="margin-top: -12px;visibility: hidden;">
-                            <h6>null</h6>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="table-responsive">
-                            <table id="file-datatable" class="border-top-0  table table-bordered text-nowrap border-bottom">
-                                <thead>
-                                    <tr>
-                                        <th class="border-bottom-0">Nama Pendaftar</th>
-                                        <th class="border-bottom-0">Kategori Squad</th>
-                                        <th class="border-bottom-0">Tanggal</th>
-                                        <th class="border-bottom-0">Alert</th>
-                                        <th class="border-bottom-0">Status</th>
-                                        <th class="border-bottom-0">Preview</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>New StartUp1</td>
-                                        <td>StartUp Company</td>
-                                        <td>2021-11-30</td>
-                                        <td>
-                                            <span class="badge bg-danger bg-pill">Please Approve</span>
-                                        </td>
-                                        <td>
-                                            <a   href="javascript:void(0);" class="badge bg-secondary bg-pill">Approvel</a>
-                                                /
-                                            <a   href="javascript:void(0);" class="badge bg-danger bg-pill">Not Approvel</a>		
-                                        </td>
-                                        <td>
-                                            <a class="badge bg-success bg-pill"   href="javascipt:void(0)">Preview</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>New Asosiasi1</td>
-                                        <td>Asosiasi</td>
-                                        <td>2021-11-04</td>
-                                        <td>
-                                           <span class="badge bg-danger bg-pill">Please Approve</span>
-                                        </td>
-                                        <td>
-                                            <a   href="javascript:void(0);" class="badge bg-secondary bg-pill">Approvel</a>
-                                                /
-                                            <a   href="javascript:void(0);" class="badge bg-danger bg-pill">Not Approvel</a>		
-                                        </td>
-                                        <td>
-                                            <a class="badge bg-success bg-pill"   href="javascipt:void(0)">Preview</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Komunitas1</td>
-                                        <td>Komunitas</td>
-                                        <td>2021-12-03</td>
-                                        <td>
-                                            <span class="badge bg-danger bg-pill">Please Approve</span>
-                                        </td>
-                                        <td>
-                                            <a   href="javascript:void(0);" class="badge bg-secondary bg-pill">Approvel</a>
-                                                /
-                                            <a   href="javascript:void(0);" class="badge bg-danger bg-pill">Not Approvel</a>	
-                                        </td>
-                                        <td>
-                                            <a class="badge bg-success bg-pill"   href="javascipt:void(0)">Preview</a>
-                                        </td>
-                                    </tr>
-                                        <td>New StartUp1</td>
-                                        <td>StartUp Company</td>
-                                        <td>2021-11-30</td>
-                                        <td>
-                                            <span class="badge bg-danger bg-pill">Please Approve</span>
-                                        </td>
-                                        <td>
-                                            <a   href="javascript:void(0);" class="badge bg-secondary bg-pill">Approvel</a>
-                                                /
-                                            <a   href="javascript:void(0);" class="badge bg-danger bg-pill">Not Approvel</a>		
-                                        </td>
-                                        <td>
-                                            <a class="badge bg-success bg-pill"   href="javascipt:void(0)">Preview</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>New Asosiasi1</td>
-                                        <td>Asosiasi</td>
-                                        <td>2021-11-04</td>
-                                        <td>
-                                           <span class="badge bg-danger bg-pill">Please Approve</span>
-                                        </td>
-                                        <td>
-                                            <a   href="javascript:void(0);" class="badge bg-secondary bg-pill">Approvel</a>
-                                                /
-                                            <a   href="javascript:void(0);" class="badge bg-danger bg-pill">Not Approvel</a>		
-                                        </td>
-                                        <td>
-                                            <a class="badge bg-success bg-pill"   href="javascipt:void(0)">Preview</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Komunitas1</td>
-                                        <td>Komunitas</td>
-                                        <td>2021-12-03</td>
-                                        <td>
-                                            <span class="badge bg-danger bg-pill">Please Approve</span>
-                                        </td>
-                                        <td>
-                                            <a   href="javascript:void(0);" class="badge bg-secondary bg-pill">Approvel</a>
-                                                /
-                                            <a   href="javascript:void(0);" class="badge bg-danger bg-pill">Not Approvel</a>	
-                                        </td>
-                                        <td>
-                                            <a class="badge bg-success bg-pill"   href="javascipt:void(0)">Preview</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-                    </div>
-					<!-- row -->
-					<div class="row row-sm ">
-						<div class="col-sm-12 col-md-12">
-							<div class="card overflow-hidden">
-								<div class="card-body">
-									<div class="main-content-label mg-b-5">
-										Visitor Subscribe
+						<!-- col -->
+						<div class="col-lg-12 mt-3">
+							<div class="card mg-b-20">
+								<div class="card-body d-flex p-3">
+									<div class="main-content-label mb-0 mg-t-8">DAFTAR APPROVEL VIA ADMIN KEMENPRIN
 									</div>
-									<p class="mg-b-20">It is Very Easy to Customize and it uses in website apllication.
-									</p>
-									<div id="echart2" class="ht-300"></div>
-								</div>
-							</div>
-						</div><!-- col-6 -->
+									<div class="ms-auto">
 
-
-
-					</div>
-					<!-- /row -->
-
-					<!-- row -->
-					<div class="row row-sm ">
-						<div class="col-xl-12 col-md-12 col-lg-12">
-							<div class="row row-sm">
-								<div class="col-lg-12">
-									<div class="card mg-b-20">
-										<div class="card-body d-flex p-3">
-											<div class="main-content-label mb-0 mg-t-8">UPDATE BLOG / BERTA</div>
-											<div class="ms-auto d-flex">
-												<a class="" href="edit-post.html">
-													<button class="btn btn-primary" style="border-radius: 20px;"> <i class="fa fa-user-plus me-1"></i> Create data</button>
-													<button class="btn btn-warning" style="border-radius: 20px;"> <i class="fa fa-wrench me-1"></i> Edit Data</button>
-													<button class="btn btn-danger" style="border-radius: 20px;"> <i class="fa fa-trash me-1"></i> Delete data</button>
-												</a>
-											</div>
-										</div>
 									</div>
 								</div>
 							</div>
+						</div>
+						<!-- /col -->
+						<div class="col-md-6 col-lg-3 col-xl-3">
+							<div class="card">
+								<div class="card-body"
+									style="background-color: salmon ;border: white;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;color: white;">
+									<ul class="sales-session">
+										<li style="margin-top: -7px;">
+											<h6>Software : <span class="counter number-font">38</span></h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Aplikasi Mobile : <span class="counter number-font">96</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Aplikasi Dekstop : <span class="counter number-font">126</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Aplikasi Website : <span class="counter number-font">206</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Bigdata : <span class="counter number-font">896</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Cloud Computing : <span class="counter number-font">166</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Article Intelligent : <span class="counter number-font">206</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Speech Recog : <span class="counter number-font">416</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Video Multimedia : <span class="counter number-font">416</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Embeded System : <span class="counter number-font">38</span></h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Internet of Things : <span class="counter number-font">96</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Robotik : <span class="counter number-font">126</span> </h6>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3 col-xl-3">
+							<div class="card">
+								<div class="card-body"
+									style="background-color: #1c8759 ;border: white;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;color: white;">
+									<ul class="sales-session">
+										<li style="margin-top: -7px;">
+											<h6>Elektronika : <span class="counter number-font">206</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Micro Controller : <span class="counter number-font">896</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Chipset : <span class="counter number-font">166</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Network / Jaringan : <span class="counter number-font">206</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Telekomunikasi : <span class="counter number-font">416</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Hardware : <span class="counter number-font">26</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Animasi 2D : <span class="counter number-font">38</span></h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Animasi 3D : <span class="counter number-font">96</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Game 2D/3D : <span class="counter number-font">126</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Motion Graphic : <span class="counter number-font">206</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Desain Grafis : <span class="counter number-font">896</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Desain Web : <span class="counter number-font">896</span> </h6>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3 col-xl-3">
+							<div class="card">
+								<div class="card-body"
+									style="background-color: #1c8759 ;border: white;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;color: white;">
+									<ul class="sales-session">
+										<li style="margin-top: -7px;">
+											<h6>Desain Produk : <span class="counter number-font">206</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Komik : <span class="counter number-font">416</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Film & Advertising : <span class="counter number-font">26</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Digital Marketing : <span class="counter number-font">38</span></h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Ecommerce : <span class="counter number-font">96</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Transportasi : <span class="counter number-font">126</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Edukasi : <span class="counter number-font">206</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Kesehatan : <span class="counter number-font">896</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Pertanian : <span class="counter number-font">166</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Fintech : <span class="counter number-font">96</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Fintech : <span class="counter number-font">206</span> </h6>
+										</li>
+										<li style="margin-top: -7px;">
+											<h6>Blockchain : <span class="counter number-font">416</span> </h6>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3 col-xl-3">
+							<div class="card">
+								<div class="card-body"
+									style="background-color: salmon ;border: white;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;color: white;">
+									<ul class="sales-session">
+										<li>
+											<h6>Inkubator bisnis : <span class="counter number-font">206</span> </h6>
+										</li>
+										<li>
+											<h6>Coaching : <span class="counter number-font">416</span> </h6>
+										</li>
+										<li>
+											<h6>CoWorking Spase : <span class="counter number-font">26</span> </h6>
+										</li>
+										<li>
+											<h6>Virtual Office : <span class="counter number-font">206</span> </h6>
+										</li>
+										<li>
+											<h6>Training : <span class="counter number-font">416</span> </h6>
+										</li>
+										<li>
+											<h6>Sertifikasi : <span class="counter number-font">416</span> </h6>
+										</li>
+										<li>
+											<h6>Konsultan IT : <span class="counter number-font">416</span> </h6>
+										</li>
+										<li>
+											<h6>Event Organizer : <span class="counter number-font">416</span> </h6>
+										</li>
+										<li>
+											<h6>Industri Pabrik : <span class="counter number-font">416</span> </h6>
+										</li>
+										<li style="margin-top: -12px;visibility: hidden;">
+											<h6>null</h6>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-12">
 							<div class="card">
 								<div class="card-body">
 									<div class="table-responsive">
-										<table id="example3"
+										<table id="file-datatable"
 											class="border-top-0  table table-bordered text-nowrap border-bottom">
 											<thead>
 												<tr>
-													<th class="border-bottom-0">Title</th>
-													<th class="border-bottom-0">Author</th>
-													<th class="border-bottom-0">Category</th>
-													<th class="border-bottom-0">Date</th>
+													<th class="border-bottom-0">Nama Pendaftar</th>
+													<th class="border-bottom-0">Kategori Squad</th>
+													<th class="border-bottom-0">Tanggal</th>
+													<th class="border-bottom-0">Alert</th>
 													<th class="border-bottom-0">Status</th>
-													<th class="border-bottom-0">Checked</th>
+													<th class="border-bottom-0">Preview</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td>Kopi Kenangan, Dari Mantan Jadi Startup Unicorn</td>
-													<td>Admin</td>
-													<td>Seminar</td>
-													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
-												</tr>
-												<tr>
-													<td>Di Tahun Macan, Startup Pelacak Kendaraan Siap Menerkam</td>
-													<td>Admin</td>
-													<td>Seminar</td>
-													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
-												</tr>
-												<tr>
-													<td>Jadi Unicorn ke-7 di Indonesia, Startup Ini Hanya Butuh Waktu
-														2,5 Tahun</td>
-													<td>Admin</td>
-													<td>Seminar</td>
-													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
-												</tr>
-												<tr>
-													<td>J&T Express Jadi Unicorn Baru Indonesia, Valuasinya Rp 113,5
-														Triliun</td>
-													<td>Admin</td>
-													<td>Seminar</td>
-													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
-												</tr>
-												<tr>
-													<td>Disuntik Dana Segar Rp 2,1 T, Xendit Jadi Startup Unicorn
-														Terbaru RI
+													<td>New StartUp1</td>
+													<td>StartUp Company</td>
+													<td>2021-11-30</td>
+													<td>
+														<span class="badge bg-danger bg-pill">Please Approve</span>
 													</td>
-													<td>Admin</td>
-													<td>Seminar</td>
-													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
-												</tr>
-												<tr>
-													<td>Heboh Iran kalah melawan Inggris, Ini tanggapan Lesti dan billar
+													<td>
+														<a href="javascript:void(0);"
+															class="badge bg-secondary bg-pill">Approvel</a>
+														/
+														<a href="javascript:void(0);"
+															class="badge bg-danger bg-pill">Not Approvel</a>
 													</td>
-													<td>Admin</td>
-													<td>Seminar</td>
-													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
-												</tr>
-												<tr>
-													<td>Animasi Upin dan ipin akang resmi di berhentikan.. tapi boong
+													<td>
+														<a class="badge bg-success bg-pill"
+															href="javascipt:void(0)">Preview</a>
 													</td>
-													<td>Admin</td>
-													<td>Seminar</td>
-													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
 												</tr>
 												<tr>
-													<td>SiCepat Suntik Modal Perusahaan Podcast Milik Deddy Corbuzier
+													<td>New Asosiasi1</td>
+													<td>Asosiasi</td>
+													<td>2021-11-04</td>
+													<td>
+														<span class="badge bg-danger bg-pill">Please Approve</span>
 													</td>
-													<td>Admin</td>
-													<td>Seminar</td>
-													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
-												</tr>
-												<tr>
-													<td>Startup Perikanan eFishery Memiliki Target Pasar Thailand, lalu
-														Cina dan India
+													<td>
+														<a href="javascript:void(0);"
+															class="badge bg-secondary bg-pill">Approvel</a>
+														/
+														<a href="javascript:void(0);"
+															class="badge bg-danger bg-pill">Not Approvel</a>
 													</td>
-													<td>Admin</td>
-													<td>Seminar</td>
-													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
-												</tr>
-												<tr>
-													<td>Resmi di kabarkan bahwa Karim Benzema tidak dapat ikut pildun
+													<td>
+														<a class="badge bg-success bg-pill"
+															href="javascipt:void(0)">Preview</a>
 													</td>
-													<td>Admin</td>
-													<td>Seminar</td>
-													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
 												</tr>
 												<tr>
-													<td>Abiyasa telah membuka open user untuk GHI</td>
-													<td>Admin</td>
-													<td>Seminar</td>
-													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
+													<td>Komunitas1</td>
+													<td>Komunitas</td>
+													<td>2021-12-03</td>
+													<td>
+														<span class="badge bg-danger bg-pill">Please Approve</span>
+													</td>
+													<td>
+														<a href="javascript:void(0);"
+															class="badge bg-secondary bg-pill">Approvel</a>
+														/
+														<a href="javascript:void(0);"
+															class="badge bg-danger bg-pill">Not Approvel</a>
+													</td>
+													<td>
+														<a class="badge bg-success bg-pill"
+															href="javascipt:void(0)">Preview</a>
+													</td>
+												</tr>
+												<td>New StartUp1</td>
+												<td>StartUp Company</td>
+												<td>2021-11-30</td>
+												<td>
+													<span class="badge bg-danger bg-pill">Please Approve</span>
+												</td>
+												<td>
+													<a href="javascript:void(0);"
+														class="badge bg-secondary bg-pill">Approvel</a>
+													/
+													<a href="javascript:void(0);" class="badge bg-danger bg-pill">Not
+														Approvel</a>
+												</td>
+												<td>
+													<a class="badge bg-success bg-pill"
+														href="javascipt:void(0)">Preview</a>
+												</td>
 												</tr>
 												<tr>
-													<td>APLIKASI AI UNTUK UMKM</td>
-													<td>Admin</td>
-													<td>Seminar</td>
-													<td>2011/04/25</td>
-													<td><span class="badge bg-pill bg-success">PUBLISHED</span></td>
-													<td><input type="checkbox"></td>
+													<td>New Asosiasi1</td>
+													<td>Asosiasi</td>
+													<td>2021-11-04</td>
+													<td>
+														<span class="badge bg-danger bg-pill">Please Approve</span>
+													</td>
+													<td>
+														<a href="javascript:void(0);"
+															class="badge bg-secondary bg-pill">Approvel</a>
+														/
+														<a href="javascript:void(0);"
+															class="badge bg-danger bg-pill">Not Approvel</a>
+													</td>
+													<td>
+														<a class="badge bg-success bg-pill"
+															href="javascipt:void(0)">Preview</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Komunitas1</td>
+													<td>Komunitas</td>
+													<td>2021-12-03</td>
+													<td>
+														<span class="badge bg-danger bg-pill">Please Approve</span>
+													</td>
+													<td>
+														<a href="javascript:void(0);"
+															class="badge bg-secondary bg-pill">Approvel</a>
+														/
+														<a href="javascript:void(0);"
+															class="badge bg-danger bg-pill">Not Approvel</a>
+													</td>
+													<td>
+														<a class="badge bg-success bg-pill"
+															href="javascipt:void(0)">Preview</a>
+													</td>
 												</tr>
 											</tbody>
 										</table>
@@ -1046,1725 +925,269 @@
 							</div>
 						</div>
 					</div>
-					<!-- /row -->
 
-					<!-- row -->
-					<div class="row row-sm ">
-						<div class="col-lg-12 col-xl-4 col-sm-12">
-							<div class="card">
-								<div class="card-header pb-0 pt-4">
-									<div class="d-flex justify-content-between">
-										<h4 class="card-title mg-b-10">Top Ongoing Projects</h4>
-										<i class="mdi mdi-dots-horizontal text-gray"></i>
+					<!--Sidebar-right-->
+					<div class="sidebar sidebar-right sidebar-animate">
+						<div class="panel panel-primary card mb-0">
+							<div class="panel-body tabs-menu-body p-0 border-0">
+								<ul class="Date-time">
+									<li class="time">
+										<h1 class="animated ">21:00</h1>
+										<p class="animated ">Sat,October 1st 2029</p>
+									</li>
+								</ul>
+								<div class="card-body latest-tasks">
+									<h3 class="events-title"><span>Events For Week </span></h3>
+									<div class="event">
+										<div class="Day">Monday 20 Jan</div>
+										<a href="javascript:void(0);">No Events Today</a>
 									</div>
-									<p class="tx-12 text-muted mb-0">Project Description is a formally written
-										declaration of the project and its idea and context . <a href="">Learn more</a>
-									</p>
-								</div>
-								<div class="card-body p-0 m-scroll mh-350 mt-2">
-									<div class="list-group projects-list">
-										<a href="javascript:void(0);"
-											class="list-group-item list-group-item-action flex-column align-items-start border-top-0">
-											<div class="d-flex w-100 justify-content-between">
-												<h6 class="mb-1 font-weight-semibold ">PSD Projects</h6>
-												<small class="text-danger"><i class="fa fa-caret-down me-1"></i>5 days
-													ago</small>
-											</div>
-											<p class="mb-0 text-muted mb-0 tx-12">Started:17-02-2020</p>
-											<small class="text-muted">Lorem ipsum dolor sit amet, consectetuer
-												adipiscing elit...</small>
-										</a>
-										<a href="javascript:void(0);"
-											class="list-group-item list-group-item-action flex-column align-items-start">
-											<div class="d-flex w-100 justify-content-between">
-												<h6 class="mb-1 font-weight-semibold">Wordpress Projects</h6>
-												<small class="text-success"><i class="fa fa-caret-up me-1"></i>2 days
-													ago</small>
-											</div>
-											<p class="mb-0 text-muted mb-0 tx-12">Started:15-02-2020</p>
-											<small class="text-muted">Lorem ipsum dolor sit amet, consectetuer
-												adipiscing elit..</small>
-										</a>
-										<a href="javascript:void(0);"
-											class="list-group-item list-group-item-action flex-column align-items-start">
-											<div class="d-flex w-100 justify-content-between">
-												<h6 class="mb-1 font-weight-semibold">HTML &amp; CSS3 Projects</h6>
-												<small class="text-danger"><i class="fa fa-caret-down me-1"></i>1 days
-													ago</small>
-											</div>
-											<p class="mb-0 text-muted mb-0 tx-12">Started:26-02-2020</p>
-											<small class="text-muted">Lorem ipsum dolor sit amet, consectetuer
-												adipiscing elit..</small>
-										</a>
-										<a href="javascript:void(0);"
-											class="list-group-item list-group-item-action flex-column align-items-start">
-											<div class="d-flex w-100 justify-content-between">
-												<h6 class="mb-1 font-weight-semibold">HTML &amp; CSS3 Projects</h6>
-												<small class="text-danger"><i class="fa fa-caret-down me-1"></i>1 days
-													ago</small>
-											</div>
-											<p class="mb-0 text-muted mb-0 tx-12">Started:26-02-2020</p>
-											<small class="text-muted">Lorem ipsum dolor sit amet, consectetuer
-												adipiscing elit..</small>
-										</a>
+									<div class="event">
+										<div class="Day">Tuesday 21 Jan</div>
+										<a href="javascript:void(0);">No Events Today</a>
 									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-6 col-md-12">
-							<div class="card overflow-hidden ">
-								<div class="card-header pb-0 pt-4">
-									<div class="d-flex justify-content-between">
-										<h4 class="card-title mg-b-10 ">User Baru</h4>
-										<i class="mdi mdi-dots-horizontal text-gray"></i>
-									</div>
-									<p class="tx-12 text-muted mb-0">An activity is a scheduled phase in a project plan
-										with a distinct beginning and end. <a href="">Learn more</a></p>
-								</div>
-								<div class="card-body p-0">
-									<div class="activity Activity-scroll">
-										<div class="activity-list">
-											<img src="../assets/img/faces/6.png" alt="" class="img-activity">
-											<div class="time-activity ">
-												<div class="item-activity">
-													<p class="mb-0"><span class="h6 me-1">Alghi Arif Rahman</span><span
-															class="text-muted tx-13">Baru saja Mengaktifkan Account |
-															Status : </span> <span
-															class="h6 badge bg-pill bg-success">Aktif</span></p><small
-														class="text-muted ">30 mins ago</small>
+									<div class="event">
+										<div class="Day">Wednessday 22 Jan</div>
+										<div class="tasks">
+											<div class=" task-line primary">
+												<a href="javascript:void(0);" class="label">
+													XML Import &amp; Export
+												</a>
+												<div class="time">
+													12:00 PM
 												</div>
 											</div>
-											<img src="../assets/img/faces/3.png" alt="" class="img-activity">
-											<div class="time-activity">
-												<div class="item-activity">
-													<p class="mb-0"><span class="h6 me-1">Diaz Alatta</span> <span
-															class="text-muted tx-13"> Baru Saja Mendaftarkan Akun |
-															Status : </span> <span
-															class="h6 badge bg-pill bg-danger">Not Aktif</span></p>
-													<small class="text-muted ">1 days ago</small>
-												</div>
-											</div>
-											<img src="../assets/img/faces/9.png" alt="" class="img-activity">
-											<div class="time-activity">
-												<div class="item-activity">
-													<p class="mb-0"><span class="h6 me-1">Rifki Alfandi</span> <span
-															class="text-muted tx-13"> Baru saja Melebihi Batas
-															Aktif</span> <span
-															class="h6 badge bg-pill bg-warning">Suspend</span></p><small
-														class="text-muted ">3 days ago</small>
-												</div>
-											</div>
-											<img src="../assets/img/faces/19.png" alt="" class="img-activity">
-											<div class="time-activity">
-												<div class="item-activity">
-													<p class="mb-0"><span class="h6 me-1">MangCep DevOps</span> <span
-															class="text-muted tx-13"> Baru Mendaftarkan Akun | Status :
-														</span> <span class="h6 badge bg-pill bg-danger">Not
-															Aktif</span></p><small class="text-muted ">3 days
-														ago</small>
-												</div>
-											</div>
-											<img src="../assets/img/faces/20.png" alt="" class="img-activity">
-											<div class="time-activity">
-												<div class="item-activity">
-													<p class="mb-0"><span class="h6 me-1">Aisa Devina Muharani</span>
-														<span class="text-muted tx-13"> Baru Mengaktifkan Akun | Status
-															: </span> <span
-															class="h6 badge bg-pill bg-success">Aktif</span></p><small
-														class="text-muted ">3 days ago</small>
-												</div>
+											<div class="checkbox">
+												<label class="check-box">
+													<label class="ckbox"><input checked=""
+															type="checkbox"><span></span></label>
+												</label>
 											</div>
 										</div>
+										<div class="tasks">
+											<div class="task-line danger">
+												<a href="javascript:void(0);" class="label">
+													Connect API to pages
+												</a>
+												<div class="time">
+													08:00 AM
+												</div>
+											</div>
+											<div class="checkbox">
+												<label class="check-box">
+													<label class="ckbox"><input type="checkbox"><span></span></label>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="event">
+										<div class="Day">Thursday 23 Jan</div>
+										<div class="tasks">
+											<div class="task-line success">
+												<a href="javascript:void(0);" class="label">
+													Create Wireframes
+												</a>
+												<div class="time">
+													06:20 PM
+												</div>
+											</div>
+											<div class="checkbox">
+												<label class="check-box">
+													<label class="ckbox"><input type="checkbox"><span></span></label>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="event">
+										<div class="Day">Friday 24 Jan</div>
+										<div class="tasks">
+											<div class="task-line warning">
+												<a href="javascript:void(0);" class="label">
+													Test new features in tablets
+												</a>
+												<div class="time">
+													02: 00 PM
+												</div>
+											</div>
+											<div class="checkbox">
+												<label class="check-box">
+													<label class="ckbox"><input type="checkbox"><span></span></label>
+												</label>
+											</div>
+										</div>
+										<div class="tasks">
+											<div class="task-line teal">
+												<a href="javascript:void(0);" class="label">
+													Design Evommerce
+												</a>
+												<div class="time">
+													10: 00 PM
+												</div>
+											</div>
+											<div class="checkbox">
+												<label class="check-box">
+													<label class="ckbox"><input type="checkbox"><span></span></label>
+												</label>
+											</div>
+										</div>
+										<div class="tasks mb-0">
+											<div class="task-line purple">
+												<a href="javascript:void(0);" class="label">
+													Fix Validation Issues
+												</a>
+												<div class="time">
+													12: 00 AM
+												</div>
+											</div>
+											<div class="checkbox">
+												<label class="check-box">
+													<label class="ckbox"><input type="checkbox"><span></span></label>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="d-flex pagination wd-100p">
+										<a href="javascript:void(0);">Previous</a>
+										<a href="javascript:void(0);" class="ms-auto">Next</a>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="card">
-								<div class="card-header pt-4 pb-0">
-									<div class="d-flex justify-content-between">
-										<h4 class="card-title mg-b-10 ">Top Catgeory Event</h4>
-										<i class="mdi mdi-dots-horizontal text-gray"></i>
-									</div>
-									<p class="tx-12 text-muted mb-0">The Statistics You can also summarize your data in
-										a graphical display, such as histograms <a href="">Learn more</a> </p>
-								</div>
-								<div class="p-4">
-									<div class="">
-										<div class="row">
-											<div class="col-md-6 col-6 text-center">
-												<div class="task-box primary mb-0">
-													<p class="mb-0 tx-12">Total Vote Rating</p>
-													<h3 class="counter number-font mb-0">385</h3>
-												</div>
-											</div>
-											<div class="col-md-6 col-6 text-center">
-												<div class="task-box danger  mb-0">
-													<p class="mb-0 tx-12">Jumlah Category</p>
-													<h3 class="counter number-font mb-0">19</h3>
-												</div>
-											</div>
+								<div class="card-body border-top border-bottom">
+									<div class="row">
+										<div class="col-4 text-center">
+											<a class="" href=""><i
+													class="dropdown-icon mdi  mdi-message-outline fs-20 m-0 leading-tight"></i></a>
+											<div>Inbox</div>
 										</div>
-									</div>
-								</div>
-								<div class="task-stat pb-0">
-									<div class="d-flex tasks">
-										<div class="mb-0">
-											<div class="h6 fs-15 mb-0"><i
-													class="far fa-dot-circle text-primary me-2"></i>StartUp</div>
+										<div class="col-4 text-center">
+											<a class="" href=""><i
+													class="dropdown-icon mdi mdi-tune fs-20 m-0 leading-tight"></i></a>
+											<div>Settings</div>
 										</div>
-										<span class="tx-12 ms-auto">
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-										</span>
-									</div>
-									<div class="d-flex tasks">
-										<div class="mb-0">
-											<div class="h6 fs-15 mb-0"><i
-													class="far fa-dot-circle text-pink me-2"></i>UpdateTech</div>
+										<div class="col-4 text-center">
+											<a class="" href=""><i
+													class="dropdown-icon mdi mdi-logout-variant fs-20 m-0 leading-tight"></i></a>
+											<div>Sign out</div>
 										</div>
-										<span class="tx-12 ms-auto">
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star-half text-warning"></i>
-										</span>
-									</div>
-									<div class="d-flex tasks">
-										<div class="mb-0">
-											<div class="h6 fs-15 mb-0"><i
-													class="far fa-dot-circle text-success me-2"></i>Coaching</div>
-										</div>
-										<span class="tx-12 ms-auto" style="margin-right: 10px;">
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-										</span>
-									</div>
-									<div class="d-flex tasks mb-0 border-bottom-0">
-										<div class="mb-0">
-											<div class="h6 fs-15 mb-0"><i
-													class="far fa-dot-circle text-purple me-2"></i>Pitching</div>
-										</div>
-										<span class="tx-12 ms-auto" style="margin-right: 10px;">
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-										</span>
-									</div>
-									<div class="d-flex tasks mb-0 border-bottom-0">
-										<div class="mb-0">
-											<div class="h6 fs-15 mb-0"><i
-													class="far fa-dot-circle text-purple me-2"></i>Coding</div>
-										</div>
-										<span class="tx-12 ms-auto" style="margin-right: 10px;">
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star-half text-warning"></i>
-										</span>
-									</div>
-									<div class="d-flex tasks mb-0 border-bottom-0">
-										<div class="mb-0">
-											<div class="h6 fs-15 mb-0"><i
-													class="far fa-dot-circle text-purple me-2"></i>TolkShow</div>
-										</div>
-										<span class="tx-12 ms-auto" style="margin-right: 20px;">
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star text-warning"></i>
-											<i class="ion ion-md-star-half text-warning"></i>
-										</span>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!--/Sidebar-right-->
+
+					<!-- Footer opened -->
+					<div class="main-footer ht-45">
+						<div class="container-fluid pd-t-0-f ht-100p">
+							<span> @2022 Virtual Technopark Industri Elektronika & Telematika - Dirjen ILMATE
+								Kementerian
+								Perindustrian, Development by Subdit Software dan Konten</span>
+						</div>
+					</div>
+					<!-- Footer closed -->
 				</div>
-				<!-- row -->
-				<hr>
-				<div class="row row-sm">
-					<div class="col-lg-12 col-md-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="main-content-label mg-b-5">
-									Data Statistik Event
-								</div>
-								<p class="mg-b-20">It is Very Easy to Customize and it uses in website apllication.</p>
-								<div id="index" class="ht-300"></div>
-							</div>
-						</div>
-					</div>
+				<!-- page closed -->
 
 
-					<div class="row row-sm">
-						<div class="col-md-12 col-xl-4 col-lg-4 col-sm-12">
-							<div class="card">
-								<div class="card-body">
-									<div class="d-flex justify-content-between">
-										<h4 class="card-title mg-b-10">Event Now</h4>
-										<i class="mdi mdi-dots-Vertical"></i>
-									</div>
-									<p class="tx-12 tx-gray-500 mb-3">Event Terbaru saat ini .<a href="event.html">All
-											View</a></p>
-									<div>
-										<div class="chips">
-											<div class="team">
-												<a href="javascript:void(0)" class="chip">
-													<span class="avatar cover-image"
-														data-bs-image-src="../assets/img/faces/15.png"></span>
-													Kemenperin
-												</a>
-												<i class="fab fa-facebook text-primary" aria-hidden="true"></i>
-												<i class="fab fa-twitter text-primary" aria-hidden="true"></i>
-												<i class="fas fa-envelope text-primary" aria-hidden="true"></i>
-												<p>Judul Event : Prototype Days : <span
-														class="badge bg-pill bg-success">FREE REGISTER</span></p>
-											</div>
-											<div class="team">
-												<a href="javascript:void(0)" class="chip">
-													<span class="avatar cover-image"
-														data-bs-image-src="../assets/img/faces/21.png"></span> ACCI
-												</a>
-												<i class="fab fa-facebook text-primary" aria-hidden="true"></i>
-												<i class="fab fa-twitter text-primary" aria-hidden="true"></i>
-												<i class="fas fa-envelope text-primary" aria-hidden="true"></i>
-												<p>Judul Event : Bisnis Matching : <span
-														class="badge bg-pill bg-success">FREE REGISTER</span></p>
-											</div>
-											<div class="team">
-												<a href="javascript:void(0)" class="chip">
-													<span class="avatar cover-image"
-														data-bs-image-src="../assets/img/faces/22.png"></span> MOVE
-												</a>
-												<i class="fab fa-facebook text-primary" aria-hidden="true"></i>
-												<i class="fab fa-twitter text-primary" aria-hidden="true"></i>
-												<i class="fas fa-envelope text-primary" aria-hidden="true"></i>
-												<p>Judul Event : Sosialiasi : <span
-														class="badge bg-pill bg-primary">PAID</span> / <span
-														class="badge bg-pill bg-warning">BERBAYAR</span></p>
-											</div>
-											<div class="team">
-												<a href="javascript:void(0)" class="chip">
-													<span class="avatar cover-image"
-														data-bs-image-src="../assets/img/faces/24.png"></span>AGI
-												</a>
-												<i class="fab fa-facebook text-primary" aria-hidden="true"></i>
-												<i class="fab fa-twitter text-primary" aria-hidden="true"></i>
-												<i class="fas fa-envelope text-primary" aria-hidden="true"></i>
-												<p>Judul Event : Coaching | <span class="badge bg-pill bg-success">FREE
-														REGISTER</span></p>
-											</div>
-											<div class="team">
-												<a href="javascript:void(0)" class="chip">
-													<span class="avatar cover-image"
-														data-bs-image-src="../assets/img/faces/23.png"></span>Rice
-													Bandung
-												</a>
-												<i class="fab fa-facebook text-primary" aria-hidden="true"></i>
-												<i class="fab fa-twitter text-primary" aria-hidden="true"></i>
-												<i class="fas fa-envelope text-primary" aria-hidden="true"></i>
-												<p>Judul Event : Bimtek Virtual : <span
-														class="badge bg-pill bg-primary">PAID</span> / <span
-														class="badge bg-pill bg-warning">BERBAYAR</span></p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+				<!--- Back-to-top --->
+				<a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
 
-						<div class="col-md-12 col-xl-4 col-lg-4 col-sm-12">
-							<div class="card">
-								<div class="card-body">
-									<div class="d-flex justify-content-between">
-										<h4 class="card-title mg-b-10">Upcoming event</h4>
-										<i class="mdi mdi-dots-Vertical"></i>
-									</div>
-									<p class="tx-12 tx-gray-500 mb-3">Event yang akan mendatang .<a
-											href="event.html">All View</a></p>
-									<div>
-										<div class="chips">
-											<div class="team">
-												<a href="javascript:void(0)" class="chip">
-													<span class="avatar cover-image"
-														data-bs-image-src="../assets/img/faces/25.png"></span> AINAKI
-												</a>
-												<span id="timer-outputpattern" class="mb-0 text-primary"></span>
-												<p>Judul Event : Networking System : <span
-														class="badge bg-pill bg-danger">PANDING</span></p>
-											</div>
-											<div class="team">
-												<a href="javascript:void(0)" class="chip">
-													<span class="avatar cover-image"
-														data-bs-image-src="../assets/img/faces/26.png"></span> PT. WAGO
-													MU. KREATI ASIA
-												</a>
-												<span id="timer-outputpattern1" class="mb-0 text-primary"></span>
-												<p>Judul Event : Startegi di Era Modern : <span
-														class="badge bg-pill bg-danger">PANDING</span></p>
-											</div>
-											<div class="team">
-												<a href="javascript:void(0)" class="chip">
-													<span class="avatar cover-image"
-														data-bs-image-src="../assets/img/faces/27.png"></span> Cimahi
-													TechnoPark
-												</a>
-												<span id="timer-outputpattern2" class="mb-0 text-primary"></span>
-												<p>Judul Event : Menguasai Laravel : <span
-														class="badge bg-pill bg-danger">PANDING</span></p>
-											</div>
-											<div class="team">
-												<a href="javascript:void(0)" class="chip">
-													<span class="avatar cover-image"
-														data-bs-image-src="../assets/img/faces/15.png"></span>Kemenperin
-												</a>
-												<span id="timer-outputpattern3" class="mb-0 text-primary"
-													style="margin-left: 15px;"></span>
-												<p>Judul Event : Strategi bisnis mudah : <span
-														class="badge bg-pill bg-danger">PANDING</span></p>
-											</div>
-											<div class="team">
-												<a href="javascript:void(0)" class="chip">
-													<span class="avatar cover-image"
-														data-bs-image-src="../assets/img/faces/23.png"></span>Rice
-													Bandung
-												</a>
-												<span id="timer-outputpattern4" class="mb-0 text-primary"></span>
-												<p>Judul Event : Pelatihan 3D : <span
-														class="badge bg-pill bg-danger">PANDING</span></p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+				<!--- JQuery min js --->
+				<script src="../assets/plugins/jquery/jquery.min.js"></script>
 
-						<div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
-							<div class="card overflow-hidden">
-								<div class="card-header pb-0">
-									<div class="d-flex justify-content-between">
-										<h4 class="card-title mg-b-10 mt-2">Statistik Event</h4>
-										<i class="mdi mdi-dots-horizontal text-gray"></i>
-									</div>
-									<p class="tx-12 text-muted mb-0"> In the Project Workload report, their remaining
-										assignments, completion dates, whether their work is at-risk. <a href="">Learn
-											more</a></p>
-								</div>
-								<div class="card-body">
-									<div class="">
-										<div class="row justify-content-md-center">
-											<div class="col-sm-12">
-												<div class="">
-													<canvas id="chartDonut4" class="ht-175 drop-shadow"></canvas>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="pt-3">
-										<div class="row ">
-											<div class="col-sm-8 ">
-												<h5 class="mb-0 tx-15 d-flex"><span
-														class="legend bg-primary-gradient brround"></span>Event Selesai
-													</h6>
-													<p class="text-muted  tx-13 mb-0">Event yang sudah di kerjakan</p>
-											</div>
-											<div class="col-sm-4 ">
-												<span id="sparkel18">1,3,7,8,4,5,4,8,6</span>
-											</div>
-										</div>
-									</div>
+				<!--- Datepicker js --->
+				<script src="../assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
 
-									<div class="pt-3">
-										<div class="row ">
-											<div class="col-sm-8 ">
-												<h6 class="mb-0 tx-15 d-flex"><span
-														class="legend bg-danger-gradient brround"></span>Event Now</h6>
-												<p class="text-muted tx-13 mb-0 ">Event yang sedang berlangsung</p>
-											</div>
-											<div class="col-sm-4 ">
-												<span id="sparkel16">2,5,6,4,8,6,5,9,6</span>
-											</div>
-										</div>
-									</div>
-									<div class="pt-3">
-										<div class="row ">
-											<div class="col-sm-8 ">
-												<h6 class="mb-0 tx-15 d-flex"><span
-														class="legend bg-success-gradient brround"></span>Event Up
-													Coming</h6>
-												<p class="text-muted tx-13 mb-0">Event yang akan datang</p>
-											</div>
-											<div class="col-sm-4 ">
-												<span id="sparkel17">2,5,6,4,8,6,5,9,6</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row row-sm">
-						<div class="col-md-12 col-lg-12 col-xl-8 col-sm-12">
-							<div class="card">
-								<div class="card-header">
-									<div class="d-flex justify-content-between">
-										<h4 class="card-title pt-2">Apps & Software</h4>
-										<i class="mdi mdi-dots-Vertical"></i>
-									</div>
-									<p class="tx-12 tx-gray-500 mb-0">Lorem ipsum dolor sit amet, consectetur
-										adipisicing elit. Ipsum iure, quis corrupti culpa tempora ratione explicabo,
-										quidem ad perspiciatis, <a href="app.html"> View All</a></p>
-								</div><!-- card-header -->
-								<div class="card-body p-0">
-									<div class="browser-stats">
-										<div class="d-flex align-items-center item  border-bottom">
-											<div class="d-flex">
-												<img src="../assets/img/faces/dota.png" alt="img"
-													class="ht-30 wd-30 me-2">
-												<div class="">
-													<h6 class="">Dota 2 </h6>
-													<span class="sub-text">Category : <span
-															class="badge badge-pill bg-danger">Games</span></span>
-												</div>
-											</div>
-											<div class=" my-auto">
-												<div class="d-flex">
-													<i class="fa fa-gamepad mt-3"
-														style="font-size:20px; margin-left:10px;"></i>
-												</div>
-											</div>
-											<div class=" my-auto">
-												<div class="d-flex">
-													<h6 class="sub-text mt-3 badge badge-pill"
-														style="margin-left: 10px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius: 20px;padding: 10px;">
-														Owner : Rice Bandung <img src="../assets/img/faces/23.png"
-															alt="" class="ht-30 wd-30"
-															style="border-radius: 50%;margin-left: 10px;"> </h6>
-												</div>
-											</div>
-											<div class="ms-auto my-auto">
-												<div class="d-flex">
-													<span class="text-success"><i
-															class="fe fe-arrow-up"></i>61.54%</span>
-												</div>
-											</div>
-										</div>
-										<div class="d-flex align-items-center item  border-bottom">
-											<div class="d-flex">
-												<img src="../assets/img/faces/kotlin.png" alt="img"
-													class="ht-30 wd-30 me-2">
-												<div class="">
-													<h6 class="">Kotlin</h6>
-													<span class="sub-text">Category : <span
-															class="badge badge-pill bg-primary">Software</span></span>
-												</div>
-											</div>
-											<div class=" my-auto">
-												<div class="d-flex">
-													<i class="fa fa-code mt-3"
-														style="font-size:20px; margin-left:10px;"></i>
-												</div>
-											</div>
-											<div class=" my-auto">
-												<div class="d-flex">
-													<h6 class="sub-text mt-3 badge badge-pill"
-														style="margin-left: 10px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius: 20px;padding: 10px;">
-														Owner : MOVE <img src="../assets/img/faces/22.png" alt=""
-															class="ht-30 wd-30"
-															style="border-radius: 50%;margin-left: 10px;"> </h6>
-												</div>
-											</div>
-											<div class="ms-auto my-auto">
-												<div class="d-flex">
-													<span class="text-danger"><i
-															class="fe fe-arrow-down"></i>1.5%</span>
-												</div>
-											</div>
-										</div>
-										<div class="d-flex align-items-center item  border-bottom">
-											<div class="d-flex">
-												<img src="../assets/img/faces/postman.png" alt="img"
-													class="ht-30 wd-30 me-2">
-												<div class="">
-													<h6 class="">Postman</h6>
-													<span class="sub-text">Category : <span
-															class="badge badge-pill bg-primary">Software</span></span>
-												</div>
-											</div>
-											<div class=" my-auto">
-												<div class="d-flex">
-													<i class="fa fa-code mt-3"
-														style="font-size:20px; margin-left:10px;"></i>
-												</div>
-											</div>
-											<div class=" my-auto">
-												<div class="d-flex">
-													<h6 class="sub-text mt-3 badge badge-pill"
-														style="margin-left: 10px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius: 20px;padding: 10px;">
-														Owner : PT WAGO MU. KREATI ASIA <img
-															src="../assets/img/faces/26.png" alt="" class="ht-30 wd-30"
-															style="border-radius: 50%;margin-left: 10px;"> </h6>
-												</div>
-											</div>
-											<div class="ms-auto my-auto">
-												<div class="d-flex">
-													<span class="text-danger"><i
-															class="fe fe-arrow-down"></i>12.54%</span>
-												</div>
-											</div>
-										</div>
-										<div class="d-flex align-items-center item  border-bottom">
-											<div class="d-flex">
-												<img src="../assets/img/faces/unity.png" alt="img"
-													class="ht-30 wd-30 me-2">
-												<div class="">
-													<h6 class="">Unity</h6>
-													<span class="sub-text">Category : <span
-															class="badge badge-pill bg-info">Animasi</span></span>
-												</div>
-											</div>
-											<div class=" my-auto">
-												<div class="d-flex">
-													<i class="fa fa-object-ungroup mt-3"
-														style="font-size:20px; margin-left:10px;"></i>
-												</div>
-											</div>
-											<div class=" my-auto">
-												<div class="d-flex">
-													<h6 class="sub-text mt-3 badge badge-pill"
-														style="margin-left: 10px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius: 20px;padding: 10px;">
-														Owner : AGI <img src="../assets/img/faces/24.png" alt=""
-															class="ht-30 wd-30"
-															style="border-radius: 50%;margin-left: 10px;"> </h6>
-												</div>
-											</div>
-											<div class="ms-auto my-auto">
-												<div class="d-flex">
-													<span class="text-danger"><i
-															class="fe fe-arrow-down"></i>5,1%</span>
-												</div>
-											</div>
-										</div>
-										<div class="d-flex align-items-center item border-bottom">
-											<div class="d-flex">
-												<img src="../assets/img/faces/wa.png" alt="img"
-													class="ht-30 wd-30 me-2">
-												<div class="">
-													<h6 class="">Whatsapp</h6>
-													<span class="sub-text">Category : <span class="badge badge-pill"
-															style="background-color:#ff8000 ;">Mobile Apps &
-															Software</span></span>
-												</div>
-											</div>
-											<div class=" my-auto">
-												<div class="d-flex">
-													<i class="fab fa-android mt-3"
-														style="font-size:20px; margin-left:10px;"></i>
-												</div>
-											</div>
-											<div class=" my-auto">
-												<div class="d-flex">
-													<h6 class="sub-text mt-3 badge badge-pill"
-														style="margin-left: 10px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius: 20px;padding: 10px;">
-														Owner : Cimahi TechnoPark <img src="../assets/img/faces/27.png"
-															alt="" class="ht-30 wd-30"
-															style="border-radius: 50%;margin-left: 10px;"> </h6>
-												</div>
-											</div>
-											<div class="ms-auto my-auto">
-												<div class="d-flex">
-													<span class="text-success"><i
-															class="fe fe-arrow-upss"></i>14,31%</span>
-												</div>
-											</div>
-										</div>
-										<div class="d-flex align-items-center item border-bottom">
-											<div class="d-flex">
-												<img src="../assets/img/faces/swift.png" alt="img"
-													class="ht-30 wd-30 me-2">
-												<div class="">
-													<h6 class="">Swift</h6>
-													<span class="sub-text">Category : <span class="badge badge-pill"
-															style="background-color:#ff8000 ;">Mobile Apps &
-															Software</span></span>
-												</div>
-											</div>
-											<div class=" my-auto">
-												<div class="d-flex">
-													<i class="fab fa-android mt-3"
-														style="font-size:20px; margin-left:10px;"></i>
-												</div>
-											</div>
-											<div class=" my-auto">
-												<div class="d-flex">
-													<h6 class="sub-text mt-3 badge badge-pill"
-														style="margin-left: 10px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius: 20px;padding: 10px;">
-														Owner : Aisa Devina Muharani <img
-															src="../assets/img/faces/20.png" alt="" class="ht-30 wd-30"
-															style="border-radius: 50%;margin-left: 10px;"> </h6>
-												</div>
-											</div>
-											<div class="ms-auto my-auto">
-												<div class="d-flex">
-													<span class="text-success"><i
-															class="fe fe-arrow-upss"></i>4,81%</span>
-												</div>
-											</div>
-										</div>
-										<div class="d-flex align-items-center item">
-											<div class="d-flex">
-												<img src="../assets/img/faces/golang.png" alt="img"
-													class="ht-30 wd-30 me-2">
-												<div class="">
-													<h6 class="">Golang</h6>
-													<span class="sub-text">Category : <span
-															class="badge badge-pill bg-primary">Software</span></span>
-												</div>
-											</div>
-											<div class=" my-auto">
-												<div class="d-flex">
-													<i class="fa fa-code mt-3"
-														style="font-size:20px; margin-left:10px;"></i>
-												</div>
-											</div>
-											<div class=" my-auto">
-												<div class="d-flex">
-													<h6 class="sub-text mt-3 badge badge-pill"
-														style="margin-left: 10px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius: 20px;padding: 10px;">
-														Owner : Alghi Arif R <img src="../assets/img/faces/6.png" alt=""
-															class="ht-30 wd-30"
-															style="border-radius: 50%;margin-left: 10px;"> </h6>
-												</div>
-											</div>
-											<div class="ms-auto my-auto">
-												<div class="d-flex">
-													<span class="text-success"><i
-															class="fe fe-arrow-up"></i>2.99%</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div><!-- card -->
+				<!--- Bootstrap Bundle js --->
+				<script src="../assets/plugins/bootstrap/popper.min.js"></script>
+				<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="card">
-								<div class="card-header pt-4 pb-0">
-									<div class="d-flex justify-content-between">
-										<h4 class="card-title mg-b-10 ">Top Category Apps & Software</h4>
-										<i class="mdi mdi-dots-horizontal text-gray"></i>
-									</div>
-									<p class="tx-12 text-muted mb-0">The Statistics You can also summarize your data in
-										a graphical display, such as histograms <a href="">Learn more</a> </p>
-								</div>
-								<div class="p-4">
-									<div class="">
-										<div class="row">
-											<div class="col-md-6 col-6 text-center">
-												<div class="task-box  mb-0"
-													style="background-color: #870101;border-radius: 20px;color: white;box-shadow: rgba(255, 69, 69,0.90) 0px 3px 8px;">
-													<p class="mb-0 tx-12">Jumlah Apps</p>
-													<h3 class="counter number-font mb-0">385</h3>
-												</div>
-											</div>
-											<div class="col-md-6 col-6 text-center">
-												<div class="task-box  mb-0"
-													style="background-color: #017582;border-radius: 20px;color: white;box-shadow: rgba(55, 221, 240,0.90) 0px 3px 8px;">
-													<p class="mb-0 tx-12">Jumlah Category</p>
-													<h3 class="counter number-font mb-0">4</h3>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="task-stat pb-0">
-									<div class="d-flex tasks">
-										<div class="mb-0">
-											<div class="h6 fs-15 mb-0"><i class="fa fa-code me-2"></i>Software : </div>
-										</div>
-										<span class="tx-12 ms-auto">
-											<p class="counter number-font mb-0"
-												style="font-weight:bold;color: #017582;">100</p>
-										</span>
-									</div>
-									<div class="d-flex tasks">
-										<div class="mb-0">
-											<div class="h6 fs-15 mb-0"><i class="fa fa-object-ungroup me-2"></i>Animasi
-											</div>
-										</div>
-										<span class="tx-12 ms-auto">
-											<p class="counter number-font mb-0"
-												style="font-weight:bold;color: #017582;">70</p>
-										</span>
-									</div>
-									<div class="d-flex tasks">
-										<div class="mb-0">
-											<div class="h6 fs-15 mb-0"><i class="fab fa-android me-2"></i>Mobile & Apps
-											</div>
-										</div>
-										<span class="tx-12 ms-auto">
-											<p class="counter number-font mb-0"
-												style="font-weight:bold;color: #017582;">112</p>
-										</span>
-									</div>
-									<div class="d-flex tasks">
-										<div class="mb-0">
-											<div class="h6 fs-15 mb-0"><i class="fa fa-gamepad me-2"></i>Games</div>
-										</div>
-										<span class="tx-12 ms-auto">
-											<p class="counter number-font mb-0"
-												style="font-weight:bold;color: #017582;">400</p>
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="card mg-b-20 mg-md-b-0" style="margin-top: -10px;">
-								<div class="card-body">
-									<div class="main-content-label mg-b-5">
-										Statistik Apps
-									</div>
-									<div class="ht-200 ht-sm-300" id="flotPie1"></div>
-								</div>
-							</div>
-						</div>
-						<!-- ===================================== JANGAN DI HAPUS ===============================================================-->
-						<!-- row -->
-						<div class="row row-sm" style="visibility: hidden;">
-							<div class="col-md-6">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Bar Chart
-										</div>
-										<p class="mg-b-20">Basic Charts Of Azira template.</p>
-										<div class="ht-200 ht-sm-300" id="flotBar1"></div>
-									</div>
-								</div>
-							</div><!-- col-6 -->
-							<div class="col-md-6">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Bar Chart
-										</div>
-										<p class="mg-b-20">Basic Charts Of Azira template.</p>
-										<div class="ht-200 ht-sm-300" id="flotBar2"></div>
-									</div>
-								</div>
-							</div><!-- col-6 -->
-						</div>
-						<!-- /row -->
+				<!--- Internal Chart.bundle js --->
+				<script src="../assets/plugins/chart.js/Chart.bundle.min.js"></script>
 
-						<!-- row -->
-						<div class="row row-sm" style="visibility: hidden;">
-							<div class="col-md-6">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Line Chart
-										</div>
-										<p class="mg-b-20">Basic Charts Of Azira template.</p>
-										<div class="ht-200 ht-sm-300" id="flotLine1"></div>
-									</div>
-								</div>
-							</div><!-- col-6 -->
-							<div class="col-md-6">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Line Chart
-										</div>
-										<p class="mg-b-20">Basic Charts Of Azira template.</p>
-										<div class="ht-200 ht-sm-300" id="flotLine2"></div>
-									</div>
-								</div>
-							</div><!-- col-6 -->
-						</div>
-						<!-- /row -->
+				<!--- Flot js --->
+				<script src="../assets/plugins/jquery.flot/jquery.flot.js"></script>
+				<script src="../assets/plugins/jquery.flot/jquery.flot.pie.js"></script>
+				<script src="../assets/plugins/jquery.flot/jquery.flot.resize.js"></script>
 
-						<!-- row -->
-						<div class="row row-sm" style="visibility: hidden;">
-							<div class="col-md-6">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Area Chart
-										</div>
-										<p class="mg-b-20">Basic Charts Of Azira template.</p>
-										<div class="ht-200 ht-sm-300" id="flotArea1"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 ">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Area Chart
-										</div>
-										<p class="mg-b-20">Basic Charts Of Azira template.</p>
-										<div class="ht-200 ht-sm-300" id="flotArea2"></div>
-									</div>
-								</div>
-							</div><!-- col-6 -->
-						</div>
-						<!-- /row -->
-						<!-- ====================================== -->
-					</div>
-					<!-- /row -->
+				<!-- DATA TABLE JS-->
+				<script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+				<script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+				<script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+				<script src="../assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
+				<script src="../assets/plugins/datatable/js/jszip.min.js"></script>
+				<script src="../assets/plugins/datatable/pdfmake/pdfmake.min.js"></script>
+				<script src="../assets/plugins/datatable/pdfmake/vfs_fonts.js"></script>
+				<script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
+				<script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
+				<script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+				<script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
+				<script src="../assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
 
-					<!-- perbaikan -->
-					<div class="row row-sm" style="margin-top: -1200px;">
-						<div class="col-sm-12 col-md-12">
-							<div class="row row-sm">
-								<div class="col-lg-12">
-									<div class="card mg-b-20">
-										<div class="card-body d-flex p-3">
-											<div class="main-content-label mb-0 mg-t-8">masih progreses development
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-12 col-md-12" style="display: flex;">
-							<div class="card">
-								<div class="card-body">
-									<div class="row">
-										<div class="col">
-											<div class="">Total Revenue</div>
-											<div class="h3 mt-2 mb-2"><b>$2.98M</b><span
-													class="text-success tx-13 ms-2">(+35%)</span></div>
-										</div>
-										<div class="col-auto align-self-center ">
-											<div class="feature mt-0 mb-0">
-												<i
-													class="ti-bar-chart-alt project bg-success-transparent text-success "></i>
-											</div>
-										</div>
-									</div>
-									<div class="">
-										<p class="mb-1">Overview of Last month</p>
-										<div class="progress progress-sm h-1 mb-1">
-											<div class="progress-bar bg-success wd-25 " role="progressbar"></div>
-										</div>
-										<small class="mb-0 text-muted">Monthly<span
-												class="float-end text-muted">25%</span></small>
-									</div>
-
-								</div>
-							</div>
-							<div class="card" style="margin-left: 12px;">
-								<div class="card-body">
-									<div class="row">
-										<div class="col">
-											<div class="">Churned Users</div>
-											<div class="h3 mt-2 mb-2"><b>286</b><span
-													class="text-success tx-13 ms-2">(+08%)</span></div>
-										</div>
-										<div class="col-auto align-self-center ">
-											<div class="feature mt-0 mb-0">
-												<i class="ti-pulse project bg-warning-transparent text-warning "></i>
-											</div>
-										</div>
-									</div>
-									<div class="">
-										<p class="mb-1">Overview of Last month</p>
-										<div class="progress progress-sm h-1 mb-1">
-											<div class="progress-bar bg-danger wd-30 " role="progressbar"></div>
-										</div>
-										<small class="mb-0 text-muted">Monthly<span
-												class="float-end text-muted">30%</span></small>
-									</div>
-								</div>
-							</div>
-							<div class="card" style="margin-left: 12px;">
-								<div class="card-body">
-									<div class="row">
-										<div class="col">
-											<div class="">New Users</div>
-											<div class="h3 mt-2 mb-2"><b>692</b><span
-													class="text-success tx-13 ms-2">(+15%)</span></div>
-										</div>
-										<div class="col-auto align-self-center ">
-											<div class="feature mt-0 mb-0">
-												<i class="fe fe-users project bg-pink-transparent text-pink "></i>
-											</div>
-										</div>
-									</div>
-									<div class="">
-										<p class="mb-1">Overview of Last month</p>
-										<div class="progress progress-sm h-1 mb-1">
-											<div class="progress-bar bg-secondary wd-50 " role="progressbar"></div>
-										</div>
-										<small class="mb-0 text-muted">Monthly<span
-												class="float-end text-muted">50%</span></small>
-									</div>
-								</div>
-							</div>
-
-							<div class="card" style="margin-left: 12px;">
-								<div class="card-body">
-									<div class="row">
-										<div class="col">
-											<div class="">New Users</div>
-											<div class="h3 mt-2 mb-2"><b>692</b><span
-													class="text-success tx-13 ms-2">(+15%)</span></div>
-										</div>
-										<div class="col-auto align-self-center ">
-											<div class="feature mt-0 mb-0">
-												<i class="fe fe-users project bg-pink-transparent text-pink "></i>
-											</div>
-										</div>
-									</div>
-									<div class="">
-										<p class="mb-1">Overview of Last month</p>
-										<div class="progress progress-sm h-1 mb-1">
-											<div class="progress-bar bg-secondary wd-50 " role="progressbar"></div>
-										</div>
-										<small class="mb-0 text-muted">Monthly<span
-												class="float-end text-muted">50%</span></small>
-									</div>
-								</div>
-							</div>
-
-							<div class="card" style="margin-left: 12px;">
-								<div class="card-body">
-									<div class="row">
-										<div class="col">
-											<div class="">New Users</div>
-											<div class="h3 mt-2 mb-2"><b>692</b><span
-													class="text-success tx-13 ms-2">(+15%)</span></div>
-										</div>
-										<div class="col-auto align-self-center ">
-											<div class="feature mt-0 mb-0">
-												<i class="fe fe-users project bg-pink-transparent text-pink "></i>
-											</div>
-										</div>
-									</div>
-									<div class="">
-										<p class="mb-1">Overview of Last month</p>
-										<div class="progress progress-sm h-1 mb-1">
-											<div class="progress-bar bg-secondary wd-50 " role="progressbar"></div>
-										</div>
-										<small class="mb-0 text-muted">Monthly<span
-												class="float-end text-muted">50%</span></small>
-									</div>
-								</div>
-							</div>
-
-							<div class="card" style="margin-left: 10px;">
-								<div class="card-body">
-									<div class="row">
-										<div class="col">
-											<div class="">New Users</div>
-											<div class="h3 mt-2 mb-2"><b>692</b><span
-													class="text-success tx-13 ms-2">(+15%)</span></div>
-										</div>
-										<div class="col-auto align-self-center ">
-											<div class="feature mt-0 mb-0">
-												<i class="fe fe-users project bg-pink-transparent text-pink "></i>
-											</div>
-										</div>
-									</div>
-									<div class="">
-										<p class="mb-1">Overview of Last month</p>
-										<div class="progress progress-sm h-1 mb-1">
-											<div class="progress-bar bg-secondary wd-50 " role="progressbar"></div>
-										</div>
-										<small class="mb-0 text-muted">Monthly<span
-												class="float-end text-muted">50%</span></small>
-									</div>
-								</div>
-							</div>
+				<script src="../assets/js/table-data.js"></script>
 
 
+				<!--- Ionicons js --->
+				<script src="../assets/plugins/ionicons/ionicons.js"></script>
 
-						</div>
-						<!-- Trafik Member 1 -->
-						<div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
-							<div class="card overflow-hidden">
-								<div class="card-header pb-0">
-									<div class="d-flex justify-content-between">
-										<h4 class="card-title mg-b-10 mt-2">Valuasi Technopark</h4>
-										<i class="mdi mdi-dots-horizontal text-gray"></i>
-									</div>
-									<p class="tx-12 text-muted mb-0">Key Performa Index Technopark
-								</div>
-								<div class="card-body">
-									<div class="">
-										<div class="row justify-content-md-center">
-											<div class="col-sm-12">
-												<div class="">
-													<canvas id="chartDonut" class="ht-175 drop-shadow"></canvas>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="pt-3">
-										<div class="row ">
-											<div class="col-sm-8 ">
-												<h5 class="mb-0 tx-15 d-flex"><span
-														class="legend bg-primary-gradient brround"></span>Kerjasama</h6>
-													<p class="text-muted  tx-13 mb-0">Performa Kerjasama antar
-														Technopark</p>
-											</div>
-											<div class="col-sm-4 ">
-												<span id="sparkel1">1,3,7,8,4,5,4,8,6</span>
-											</div>
-										</div>
-									</div>
+				<!--- Moment js --->
+				<script src="../assets/plugins/moment/moment.js"></script>
 
-									<div class="pt-3">
-										<div class="row ">
-											<div class="col-sm-8 ">
-												<h6 class="mb-0 tx-15 d-flex"><span
-														class="legend bg-danger-gradient brround"></span>Kolaborasi</h6>
-												<p class="text-muted tx-13 mb-0 ">Performa Kolaborasi antar Technopark
-												</p>
-											</div>
-											<div class="col-sm-4 ">
-												<span id="sparkel2">2,5,6,4,8,6,5,9,6</span>
-											</div>
-										</div>
-									</div>
-									<div class="pt-3">
-										<div class="row ">
-											<div class="col-sm-8 ">
-												<h6 class="mb-0 tx-15 d-flex"><span
-														class="legend bg-success-gradient brround"></span>Value
-													Pekerjaan</h6>
-												<p class="text-muted tx-13 mb-0">Pekerjaan yang dikerjakan</p>
-											</div>
-											<div class="col-sm-4 ">
-												<span id="sparkel3">2,5,6,4,8,6,5,9,6</span>
-											</div>
-										</div>
-									</div>
-									<div class="pt-3">
-										<div class="row ">
-											<div class="col-sm-8 ">
-												<h6 class="mb-0 tx-15 d-flex"><span
-														class="legend bg-danger-gradient brround"></span>Jumlah SDM</h6>
-												<p class="text-muted tx-13 mb-0">Pertumbuhan resources</p>
-											</div>
-											<div class="col-sm-4 ">
-												<span id="sparkel4">2,5,6,4,8,6,5,9,6</span>
-											</div>
-										</div>
-									</div>
-									<div class="pt-3">
-										<div class="row ">
-											<div class="col-sm-8 ">
-												<h6 class="mb-0 tx-15 d-flex"><span
-														class="legend bg-danger-gradient brround"></span>HKI</h6>
-												<p class="text-muted tx-13 mb-0">Implementasi ke Industri</p>
-											</div>
-											<div class="col-sm-4 ">
-												<span id="sparkel5">2,5,6,4,8,6,5,9,6</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+				<!--- JQuery sparkline js --->
+				<script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
 
-						<!-- Trafik Member 2 -->
-						<div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
-							<div class="card overflow-hidden">
-								<div class="card-header pb-0">
-									<div class="d-flex justify-content-between">
-										<h4 class="card-title mg-b-10 mt-2">Valuasi Startup Company</h4>
-										<i class="mdi mdi-dots-horizontal text-gray"></i>
-									</div>
-									<p class="tx-12 text-muted mb-0">Ker Performace Index Startup
-								</div>
-								<div class="card-body">
-									<div class="">
-										<div class="row justify-content-md-center">
-											<div class="col-sm-12">
-												<div class="">
-													<canvas id="chartDonut1" class="ht-175 drop-shadow"
-														style="margin-left: -25px;"></canvas>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="pt-3">
-										<div class="row ">
-											<div class="col-sm-8 ">
-												<h5 class="mb-0 tx-15 d-flex"><span
-														class="legend bg-primary-gradient brround"></span>Kerjasama</h6>
-													<p class="text-muted  tx-13 mb-0">Performa Kerjasama antar Member
-													</p>
-											</div>
-											<div class="col-sm-4 ">
-												<span id="sparkel6">1,3,7,8,4,5,4,8,6</span>
-											</div>
-										</div>
-									</div>
+				<!--- Select2 js --->
+				<script src="../assets/plugins/select2/js/select2.min.js"></script>
 
-									<div class="pt-3">
-										<div class="row ">
-											<div class="col-sm-8 ">
-												<h6 class="mb-0 tx-15 d-flex"><span
-														class="legend bg-danger-gradient brround"></span>Kolaborasi</h6>
-												<p class="text-muted tx-13 mb-0 ">Performa Kolaborasi antar Member
+				<!--- Echart Plugin --->
+				<script src="../assets/plugins/echart/echart.js"></script>
+				<script src="../assets/js/echarts.js"></script>
 
-												</p>
-											</div>
-											<div class="col-sm-4 ">
-												<span id="sparkel7">2,5,6,4,8,6,5,9,6</span>
-											</div>
-										</div>
-									</div>
-									<div class="pt-3">
-										<div class="row ">
-											<div class="col-sm-8 ">
-												<h6 class="mb-0 tx-15 d-flex"><span
-														class="legend bg-success-gradient brround"></span>Value
-													Pekerjaan</h6>
-												<p class="text-muted tx-13 mb-0">Pekerjaan yang dikerjakan
+				<!--- Counters --->
+				<script src="../assets/plugins/counters/waypoints.min.js"></script>
+				<script src="../assets/plugins/counters/counterup.min.js"></script>
 
-												</p>
-											</div>
-											<div class="col-sm-4 ">
-												<span id="sparkel8">2,5,6,4,8,6,5,9,6</span>
-											</div>
-										</div>
-									</div>
-									<div class="pt-3">
-										<div class="row ">
-											<div class="col-sm-8 ">
-												<h6 class="mb-0 tx-15 d-flex"><span
-														class="legend bg-danger-gradient brround"></span>Jumlah SDM</h6>
-												<p class="text-muted tx-13 mb-0">Pertumbuhan Resource</p>
-											</div>
-											<div class="col-sm-4 ">
-												<span id="sparkel9">2,5,6,4,8,6,5,9,6</span>
-											</div>
-										</div>
-									</div>
-									<div class="pt-3">
-										<div class="row ">
-											<div class="col-sm-8 ">
-												<h6 class="mb-0 tx-15 d-flex"><span
-														class="legend bg-danger-gradient brround"></span>Hak Kekayaan
-													Intelektual</h6>
-												<p class="text-muted tx-13 mb-0">Implementasi ke Industri</p>
-											</div>
-											<div class="col-sm-4 ">
-												<span id="sparkel10">2,5,6,4,8,6,5,9,6</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+				<!--- Flot js --->
+				<script src="../assets/plugins/jquery.flot/jquery.flot.js"></script>
+				<script src="../assets/plugins/jquery.flot/jquery.flot.pie.js"></script>
+				<script src="../assets/plugins/jquery.flot/jquery.flot.resize.js"></script>
 
-						<!-- Trafik Member 3 -->
-						<div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
-							<div class="card overflow-hidden">
-								<div class="card-header pb-0">
-									<div class="d-flex justify-content-between">
-										<h4 class="card-title mg-b-10 mt-2">value Asosiasi / Komunitas</h4>
-										<i class="mdi mdi-dots-horizontal text-gray"></i>
-									</div>
-									<p class="tx-12 text-muted mb-0">Key Performace Index Asosiasi
-										<div class="card-body">
-											<div class="">
-												<div class="row justify-content-md-center">
-													<div class="col-sm-12">
-														<div class="">
-															<canvas id="chartDonut2" class="ht-175 drop-shadow"
-																style="margin-left: -45px;"></canvas>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="pt-3">
-												<div class="row ">
-													<div class="col-sm-8 ">
-														<h5 class="mb-0 tx-15 d-flex"><span
-																class="legend bg-primary-gradient brround"></span>Kerjasama
-															</h6>
-															<p class="text-muted  tx-13 mb-0">Performa Kerjasama antar
-																Mmeber</p>
-													</div>
-													<div class="col-sm-4 ">
-														<span id="sparkel11">1,3,7,8,4,5,4,8,6</span>
-													</div>
-												</div>
-											</div>
+				<!--- Internal Chart flot js --->
+				<script src="../assets/js/chart.flot.js"></script>
 
-											<div class="pt-3">
-												<div class="row ">
-													<div class="col-sm-8 ">
-														<h6 class="mb-0 tx-15 d-flex"><span
-																class="legend bg-danger-gradient brround"></span>Kolaborasi
-														</h6>
-														<p class="text-muted tx-13 mb-0 ">Performa Kolaborasi antar
-															Mmeber</p>
-													</div>
-													<div class="col-sm-4 ">
-														<span id="sparkel12">2,5,6,4,8,6,5,9,6</span>
-													</div>
-												</div>
-											</div>
-											<div class="pt-3">
-												<div class="row ">
-													<div class="col-sm-8 ">
-														<h6 class="mb-0 tx-15 d-flex"><span
-																class="legend bg-success-gradient brround"></span>Value
-															Pekerjaan</h6>
-														<p class="text-muted tx-13 mb-0">Pekerjaan yang dikerjakan
-														</p>
-													</div>
-													<div class="col-sm-4 ">
-														<span id="sparkel13">2,5,6,4,8,6,5,9,6</span>
-													</div>
-												</div>
-											</div>
-											<div class="pt-3">
-												<div class="row ">
-													<div class="col-sm-8 ">
-														<h6 class="mb-0 tx-15 d-flex"><span
-																class="legend bg-danger-gradient brround"></span>Jumlah
-															SDM</h6>
-														<p class="text-muted tx-13 mb-0">Pertumbuhan Resource
-														</p>
-													</div>
-													<div class="col-sm-4 ">
-														<span id="sparkel14">2,5,6,4,8,6,5,9,6</span>
-													</div>
-												</div>
-											</div>
-											<div class="pt-3">
-												<div class="row ">
-													<div class="col-sm-8 ">
-														<h6 class="mb-0 tx-15 d-flex"><span
-																class="legend bg-danger-gradient brround"></span>HKI
-														</h6>
-														<p class="text-muted tx-13 mb-0">Implementasi ke Industri
+				<!--- Time Counter --->
+				<script src="../assets/plugins/counters/jquery.missofis-countdown.js"></script>
+				<script src="../assets/plugins/counters/counter.js"></script>
 
-														</p>
-													</div>
-													<div class="col-sm-4 ">
-														<span id="sparkel15">2,5,6,4,8,6,5,9,6</span>
-													</div>
-												</div>
-											</div>
-										</div>
-								</div>
-							</div>
+				<!--- P-scroll js --->
+				<script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+				<script src="../assets/plugins/perfect-scrollbar/p-scroll.js"></script>
 
-						</div>
+				<!--- Eva-icons js --->
+				<script src="../assets/js/eva-icons.min.js"></script>
 
 
-						<!-- ========================================================== JANGAN DI HAPUS ================================================================= -->
-						<div class="row row-sm" style="display: none;">
-							<div class="col-lg-8 col-md-12">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Data Attributes
-										</div>
-										<p class="mg-b-20">It is Very Easy to Customize and it uses in website
-											apllication.</p>
-										<div id="echart1" class="ht-300"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row row-sm" style="display:none">
-							<div class="col-lg-6 col-md-12">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Bar Chart
-										</div>
-										<p class="mg-b-20">It is Very Easy to Customize and it uses in website
-											apllication.</p>
-										<div id="echart1" class="ht-300"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-12">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Vertical Bar Chart
-										</div>
-										<p class="mg-b-20">It is Very Easy to Customize and it uses in website
-											apllication.</p>
-										<div id="echart3" class="ht-300"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /row -->
+				<!--- Sidebar js --->
+				<script src="../assets/plugins/side-menu/sidemenu.js"></script>
 
-						<!-- row -->
-						<div class="row row-sm" style="display: none;">
-							<div class="col-lg-6 col-md-12">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Line Chart
-										</div>
-										<p class="mg-b-20">It is Very Easy to Customize and it uses in website
-											apllication.</p>
-										<div id="echart2" class="ht-300"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-12">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Vertical Line Chart
-										</div>
-										<p class="mg-b-20">It is Very Easy to Customize and it uses in website
-											apllication.</p>
-										<div id="echart4" class="ht-300"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- row -->
+				<!--- sticky js --->
+				<script src="../assets/js/sticky.js"></script>
 
-						<!-- row -->
-						<div class="row row-sm" style="display: none;">
-							<div class="col-lg-6 col-md-12">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Data Attributes
-										</div>
-										<p class="mg-b-20">It is Very Easy to Customize and it uses in website
-											apllication.</p>
-										<div id="echart5" class="ht-300"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-12">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Data Attributes
-										</div>
-										<p class="mg-b-20">It is Very Easy to Customize and it uses in website
-											apllication.</p>
-										<div id="echart6" class="ht-300"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- row -->
+				<!--- Right-sidebar js --->
+				<script src="../assets/plugins/sidebar/sidebar.js"></script>
+				<script src="../assets/plugins/sidebar/sidebar-custom.js"></script>
 
-						<!-- row -->
-						<div class="row row-sm" style="display: none;">
-							<div class="col-lg-6 col-md-12">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Data Attributes1
-										</div>
-										<p class="mg-b-20">It is Very Easy to Customize and it uses in website
-											apllication.</p>
-										<div id="echart7" class="ht-300"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-12">
-								<div class="card mg-b-20">
-									<div class="card-body">
-										<div class="main-content-label mg-b-5">
-											Data Attributes
-										</div>
-										<p class="mg-b-20">It is Very Easy to Customize and it uses in website
-											apllication.</p>
-										<div id="echart8" class="ht-300"></div>
-									</div>
-								</div>
-							</div>
+				<!--- Index js --->
+				<script src="../assets/js/index.js"></script>
+				<script src="../assets/js/script.js"></script>
 
-						</div>
+				<!--themecolor js-->
+				<script src="../assets/js/themecolor.js"></script>
 
-						<!-- ========================================================== DI ATAS JANGAN DI HAPUS =============================================================== -->
-					</div>
-					<!-- /row -->
-					<!-- /container -->
-				</div>
-				<!-- /main-content -->
+				<!--swither-styles js-->
+				<script src="../assets/js/swither-styles.js"></script>
 
-				<!--Sidebar-right-->
-				<div class="sidebar sidebar-right sidebar-animate">
-					<div class="panel panel-primary card mb-0">
-						<div class="panel-body tabs-menu-body p-0 border-0">
-							<ul class="Date-time">
-								<li class="time">
-									<h1 class="animated ">21:00</h1>
-									<p class="animated ">Sat,October 1st 2029</p>
-								</li>
-							</ul>
-							<div class="card-body latest-tasks">
-								<h3 class="events-title"><span>Events For Week </span></h3>
-								<div class="event">
-									<div class="Day">Monday 20 Jan</div>
-									<a href="javascript:void(0);">No Events Today</a>
-								</div>
-								<div class="event">
-									<div class="Day">Tuesday 21 Jan</div>
-									<a href="javascript:void(0);">No Events Today</a>
-								</div>
-								<div class="event">
-									<div class="Day">Wednessday 22 Jan</div>
-									<div class="tasks">
-										<div class=" task-line primary">
-											<a href="javascript:void(0);" class="label">
-												XML Import &amp; Export
-											</a>
-											<div class="time">
-												12:00 PM
-											</div>
-										</div>
-										<div class="checkbox">
-											<label class="check-box">
-												<label class="ckbox"><input checked=""
-														type="checkbox"><span></span></label>
-											</label>
-										</div>
-									</div>
-									<div class="tasks">
-										<div class="task-line danger">
-											<a href="javascript:void(0);" class="label">
-												Connect API to pages
-											</a>
-											<div class="time">
-												08:00 AM
-											</div>
-										</div>
-										<div class="checkbox">
-											<label class="check-box">
-												<label class="ckbox"><input type="checkbox"><span></span></label>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="event">
-									<div class="Day">Thursday 23 Jan</div>
-									<div class="tasks">
-										<div class="task-line success">
-											<a href="javascript:void(0);" class="label">
-												Create Wireframes
-											</a>
-											<div class="time">
-												06:20 PM
-											</div>
-										</div>
-										<div class="checkbox">
-											<label class="check-box">
-												<label class="ckbox"><input type="checkbox"><span></span></label>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="event">
-									<div class="Day">Friday 24 Jan</div>
-									<div class="tasks">
-										<div class="task-line warning">
-											<a href="javascript:void(0);" class="label">
-												Test new features in tablets
-											</a>
-											<div class="time">
-												02: 00 PM
-											</div>
-										</div>
-										<div class="checkbox">
-											<label class="check-box">
-												<label class="ckbox"><input type="checkbox"><span></span></label>
-											</label>
-										</div>
-									</div>
-									<div class="tasks">
-										<div class="task-line teal">
-											<a href="javascript:void(0);" class="label">
-												Design Evommerce
-											</a>
-											<div class="time">
-												10: 00 PM
-											</div>
-										</div>
-										<div class="checkbox">
-											<label class="check-box">
-												<label class="ckbox"><input type="checkbox"><span></span></label>
-											</label>
-										</div>
-									</div>
-									<div class="tasks mb-0">
-										<div class="task-line purple">
-											<a href="javascript:void(0);" class="label">
-												Fix Validation Issues
-											</a>
-											<div class="time">
-												12: 00 AM
-											</div>
-										</div>
-										<div class="checkbox">
-											<label class="check-box">
-												<label class="ckbox"><input type="checkbox"><span></span></label>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="d-flex pagination wd-100p">
-									<a href="javascript:void(0);">Previous</a>
-									<a href="javascript:void(0);" class="ms-auto">Next</a>
-								</div>
-							</div>
-							<div class="card-body border-top border-bottom">
-								<div class="row">
-									<div class="col-4 text-center">
-										<a class="" href=""><i
-												class="dropdown-icon mdi  mdi-message-outline fs-20 m-0 leading-tight"></i></a>
-										<div>Inbox</div>
-									</div>
-									<div class="col-4 text-center">
-										<a class="" href=""><i
-												class="dropdown-icon mdi mdi-tune fs-20 m-0 leading-tight"></i></a>
-										<div>Settings</div>
-									</div>
-									<div class="col-4 text-center">
-										<a class="" href=""><i
-												class="dropdown-icon mdi mdi-logout-variant fs-20 m-0 leading-tight"></i></a>
-										<div>Sign out</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--/Sidebar-right-->
-
-				<!-- Footer opened -->
-				<div class="main-footer ht-45">
-					<div class="container-fluid pd-t-0-f ht-100p">
-						<span> @2022 Virtual Technopark Industri Elektronika & Telematika - Dirjen ILMATE Kementerian
-							Perindustrian, Development by Subdit Software dan Konten</span>
-					</div>
-				</div>
-				<!-- Footer closed -->
-			</div>
-			<!-- page closed -->
-
-
-			<!--- Back-to-top --->
-			<a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
-
-			<!--- JQuery min js --->
-			<script src="../assets/plugins/jquery/jquery.min.js"></script>
-
-			<!--- Datepicker js --->
-			<script src="../assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
-
-			<!--- Bootstrap Bundle js --->
-			<script src="../assets/plugins/bootstrap/popper.min.js"></script>
-			<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-
-			<!--- Internal Chart.bundle js --->
-			<script src="../assets/plugins/chart.js/Chart.bundle.min.js"></script>
-
-			<!--- Flot js --->
-			<script src="../assets/plugins/jquery.flot/jquery.flot.js"></script>
-			<script src="../assets/plugins/jquery.flot/jquery.flot.pie.js"></script>
-			<script src="../assets/plugins/jquery.flot/jquery.flot.resize.js"></script>
-
-			<!-- DATA TABLE JS-->
-			<script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
-			<script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
-			<script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
-			<script src="../assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
-			<script src="../assets/plugins/datatable/js/jszip.min.js"></script>
-			<script src="../assets/plugins/datatable/pdfmake/pdfmake.min.js"></script>
-			<script src="../assets/plugins/datatable/pdfmake/vfs_fonts.js"></script>
-			<script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
-			<script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
-			<script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
-			<script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
-			<script src="../assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
-
-			<script src="../assets/js/table-data.js"></script>
-
-
-			<!--- Ionicons js --->
-			<script src="../assets/plugins/ionicons/ionicons.js"></script>
-
-			<!--- Moment js --->
-			<script src="../assets/plugins/moment/moment.js"></script>
-
-			<!--- JQuery sparkline js --->
-			<script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
-
-			<!--- Select2 js --->
-			<script src="../assets/plugins/select2/js/select2.min.js"></script>
-
-			<!--- Echart Plugin --->
-			<script src="../assets/plugins/echart/echart.js"></script>
-			<script src="../assets/js/echarts.js"></script>
-
-			<!--- Counters --->
-			<script src="../assets/plugins/counters/waypoints.min.js"></script>
-			<script src="../assets/plugins/counters/counterup.min.js"></script>
-
-			<!--- Flot js --->
-			<script src="../assets/plugins/jquery.flot/jquery.flot.js"></script>
-			<script src="../assets/plugins/jquery.flot/jquery.flot.pie.js"></script>
-			<script src="../assets/plugins/jquery.flot/jquery.flot.resize.js"></script>
-
-			<!--- Internal Chart flot js --->
-			<script src="../assets/js/chart.flot.js"></script>
-
-			<!--- Time Counter --->
-			<script src="../assets/plugins/counters/jquery.missofis-countdown.js"></script>
-			<script src="../assets/plugins/counters/counter.js"></script>
-
-			<!--- P-scroll js --->
-			<script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-			<script src="../assets/plugins/perfect-scrollbar/p-scroll.js"></script>
-
-			<!--- Eva-icons js --->
-			<script src="../assets/js/eva-icons.min.js"></script>
-
-
-			<!--- Sidebar js --->
-			<script src="../assets/plugins/side-menu/sidemenu.js"></script>
-
-			<!--- sticky js --->
-			<script src="../assets/js/sticky.js"></script>
-
-			<!--- Right-sidebar js --->
-			<script src="../assets/plugins/sidebar/sidebar.js"></script>
-			<script src="../assets/plugins/sidebar/sidebar-custom.js"></script>
-
-			<!--- Index js --->
-			<script src="../assets/js/index.js"></script>
-			<script src="../assets/js/script.js"></script>
-
-			<!--themecolor js-->
-			<script src="../assets/js/themecolor.js"></script>
-
-			<!--swither-styles js-->
-			<script src="../assets/js/swither-styles.js"></script>
-
-			<!--- Custom js --->
-			<script src="../assets/js/custom.js"></script>
+				<!--- Custom js --->
+				<script src="../assets/js/custom.js"></script>
 
 </body>
 
